@@ -1,0 +1,38 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "^VDYCvjM66Cv"
+  },
+  "ShareCommandContainers": [],
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 48460,
+  "UserServicePort": 40393,
+  "StartPage": "棚卸入力_棚卸開始",
+  "StartDateFiscalYear": 4,
+  "BaseOnStartingMonth": true,
+  "MultipleLanguageSettings": {
+    "Languages": [
+      {
+        "Name": "ja",
+        "IsDefault": true,
+        "Description": "組み込みの日本語は削除できません。",
+        "IsBuildIn": true,
+        "LanguageAttribute": "ja",
+        "FontFamily": "Body"
+      },
+      {
+        "Name": "en",
+        "Description": "組み込みの英語は削除できません。",
+        "IsBuildIn": true,
+        "LanguageAttribute": "en",
+        "FontFamily": "Calibri"
+      }
+    ],
+    "PublicResource": {},
+    "RuntimeBuiltInResource": {
+      "FrontEndResources": {},
+      "ServerResources": {}
+    },
+    "PluginResource": {}
+  }
+}

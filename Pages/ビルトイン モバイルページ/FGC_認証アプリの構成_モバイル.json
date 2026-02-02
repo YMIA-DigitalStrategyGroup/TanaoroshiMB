@@ -1,0 +1,169 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "30": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 31
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0,
+          "Mode": 2,
+          "MinLength": {
+            "Unit": 1
+          },
+          "MaxLength": {
+            "Value": 1.0
+          }
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "0,0": "  ",
+    "6,3": "認証アプリの構成",
+    "9,3": "モバイル端末の認証アプリでアカウントを追加し、下のQRコードをスキャンしてください。",
+    "22,3": "次へ"
+  },
+  "AttachInfos": {
+    "12,5": {
+      "CellType": {
+        "$type": "Forguncy.BarcodeCellType, ServerDesignerCommon",
+        "CodeType": "QRCode",
+        "ForguncyAttribute": "MFA_Secret_Barcode"
+      }
+    },
+    "22,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "次へ",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Main1",
+        "ForguncyAttribute": "MFA_Secret_Next_Button"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 24.0,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 5,
+        "VerticalAlignment": 6,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 16.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Text 1 25",
+        "Left",
+        "Bottom",
+        "Text 1 50",
+        "Top"
+      ]
+    },
+    "CellStyles": {
+      "6,3": 0,
+      "9,3": 1,
+      "12,5": 2,
+      "22,3": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "22,3,2,13",
+    "12,5,9,9",
+    "6,3,2,13",
+    "9,3,3,13"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "認証アプリの構成",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "b35031c0-04e0-4981-ac25-4f456a2c8361.jpg",
+      "ForguncyPictureName": "PCLoginBackground",
+      "ForguncyPictureSourceType": 2,
+      "StyleInfo": {
+        "Fill": null
+      },
+      "IsAutomaticFill": false,
+      "Size": "380,620"
+    },
+    {
+      "Name": "1a4f13fc-91c6-4c36-9ab6-63b98e9a7783.png",
+      "StyleInfo": {
+        "CornerRadius": 20.0,
+        "Fill": "Background 1 0"
+      },
+      "IsAutomaticFill": false,
+      "Location": "20,80",
+      "Size": "340,440"
+    }
+  ]
+}//nuiVjT9NlIUBu8oda7aTyOlmxKdtkIv+j3ixnMZw+KwjCH1YLK/N0BmkrkCpGbHBjZzQLn63x3G/jP3Oh+KCb5B6mutw62xpWXr/7y1h4bVU8Y5QR7veoG51twAv5ARP7vTfPndA+zGSLurA1vDbqtFZXHbappYQwtgRw1/NaTS47AIrdBBEudh9vPkl6nWkUD8+DuJE4OYQNc5UqMqDyizR1UcBxJa48BL6d0CB68hcXRAyBJcmBx3NuDShABH5qoUSNgcxwQ+6CTsf5ci9RekU/aid89R00tLDIr9NA6vp9P8s7/PhnloOjEsw0nDhqWjIgwtcnK0mofNki6TRoMya+2CE7/kM9UC2QpnorRo9+12xy9OciAzMBT2WnCxenbuZwWXf6vOr0ZU49OeDahniv0JcNU+V1JRrDy9xI6FbO9FHcuyCqVWiMFi2VGZgS8QnE/5HH/jH1nkZHcogW69tj0bnSywBdNRrxuVfMAYjJfebtT/TblElSwSuf8rDd2B/dNTYQ4droTHVSTWo3xR3caaVaFKNAsC6ttm5NBR5USkcV7GBFEo1kE/6Zr/ORPpUun5yezwZZbbAPZ7HxXyFoBO79ru6B2kygxy2o57V4BrArM9/fxt/iqrncYv6YWTj3oPwCtN2fjM0jnBVyzy6R0YQrbC6TnUpa0xx0Nd8T49149tLYRi3mpv0rRLSsbwCANhJBhqVN6oAv8u8XXzfJaMq5QwMVILr+mSDuznWfffJ5Na+oUI/rr5eMHNYNXBvBAva6N2cxLFT8WtXugvElFQUFjLDZ2LFIvbW7XrIS1qRv6x4l+nsWUbxGa7vfHkQrwr+s21gwz0ZJQebNByUUN23e9sD30RXZIspN4X2npZ+g8r4+meIdNiZHNVRHSl4BTszWAjnlsPKhqPriA==|920

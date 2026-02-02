@@ -1,0 +1,175 @@
+{
+  "Rows": {
+    "Count": 28
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "0,1": "棚卸入力画面"
+  },
+  "AttachInfos": {
+    "0,15": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowUserDisplayName": false,
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,0": {
+      "IsPlaceHolderCell": true
+    },
+    "25,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyIconMenuCellType, Forguncy.CustomMenu",
+        "Items": [
+          {
+            "Text": "入力",
+            "IconPath": "Application/028_edit_8.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsDefaultItem": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "ConfirmDialogSettings": {
+                      "Title": "確認",
+                      "FormulaText": "入力画面に遷移しますか？",
+                      "YesButtonText": "はい",
+                      "NoButtonText": "いいえ",
+                      "ConfirmIcon": 1
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "棚卸入力_棚卸開始"
+                      }
+                    ],
+                    "ID": "28c23941-2ea5-443e-ba25-0d06f2094a7d"
+                  }
+                ]
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Text": "修正",
+            "IconPath": "Mobile/415_message_1.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                "ConditionAndCommandPairList": [
+                  {
+                    "ConfirmDialogSettings": {
+                      "Title": "確認",
+                      "FormulaText": "修正画面に遷移しますか？",
+                      "YesButtonText": "はい",
+                      "NoButtonText": "いいえ",
+                      "ConfirmIcon": 1
+                    },
+                    "CommandList": [
+                      {
+                        "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                        "PageName": "棚卸入力_棚卸開始"
+                      }
+                    ],
+                    "ID": "390a3657-ec8f-473b-ae25-d591a34ef7e8"
+                  }
+                ]
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "BackColor": "#FFFFFF",
+            "ForeColor": "Background 1 -35",
+            "SelectedBackColor": "Background 1 0",
+            "SelectedForeColor": "Accent 1 0",
+            "FontSize": 11.0,
+            "Bold": true,
+            "Height": 55.0,
+            "IconHeight": 32.0,
+            "IconWidth": 32.0
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0,
+        "FontWeight": 0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontFamily": 3,
+        "FontSize": 10.666666666666666
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Bold",
+        "Background 1 0",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0
+    },
+    "RowStyles": {
+      "25": 1,
+      "26": 1,
+      "27": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 3
+    }
+  },
+  "Spans": [
+    "2,0,23,18",
+    "25,0,3,18",
+    "0,15,2,2",
+    "0,1,2,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "475ed418-ecb5-44e5-9243-064b15ab14e4",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "MobileMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "360,40"
+    }
+  ]
+}//CwSA/hSQw24c9Lxauhhw6S/oJYTWD/lYNkoqSRJK22veQ0ch3M8cvPy+FTkmwzl25mp6MXLiCSUmXbWosm2uKw7ER0bXZs/mVWpg1GuWVI5XCjK86t5VqcEvg5xoysmbBUnlfEA3iS5FV/1+Zh1/RD9G9dHKmnsrJVDg84qoFBk8dlbN1CdaMYAViTZH/5PjuacXYACg+8SGcTuq/AGLObFD5BqkHWKVto8uS0eliCdOEj6snpqbgPffM1OlXzDM1UD9dkbh6XmR/YkV9tWaZQtff4HxpGtAXoqEFf3+dnX6Vj+qcKs2IWXagCvuxr1icV7ujO/5LfWkthjIVvF2WGG7suVUiwHn6QNZ6iJ+dzhiONtswSzrMeQYT6UCEGRfqEOF37oJZydImIFuyRzCah6IKLRpx2JhF5GbWe98izOJjM0b45vlc1PlwBgJD9ZdCF9eCl+qbIHhB/BfHF0ZgQq0NpC4XIu7ep80hb6emAITFVFQYXPiz3M8PoPHpSzh311WPWwtVft9B7PL2/RHbEnp168+8Le4TZb4xvjArSrf36RxJL9bf+gHV31FCSHJ4947494zUGo0LgBl5szSHBVCSeDIDCtZdGBg8WaMeGa0Ah9DieW1o0efynrJjs4axf/BhRiBCEogOi2aqz0XZO+N/hzb1QWjeDGJjCNOAZBM/JiX1QrMowkB15xx9PvCkqY+GtwMWKU/OUUGhhzZjdtnAOQynKjxOSWURa5fen4CGPSjGoZNW2991tBxuppnlBbSCwf8J1DmRnZ9S+WGGJvHuHf6arOWEtp03G3F7JwnTYslM7a3Dyu746RmLX0qx6wrbijwVW7srzVthNN+a98BETkRr5oQSVPyOGBBL5jYe52uplIGqODUCfr7M+Yan3BEBuiJFWQwnOP8RXIMdw==|920
