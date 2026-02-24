@@ -21,7 +21,17 @@
   },
   {
     "ModuleName": "MobilePage/棚卸入力_棚卸開始",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-02-24T15:16:37.3570939+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\棚卸入力_棚卸開始.json",
+      "Pages\\棚卸入力_棚卸開始.rd"
+    ]
   },
   {
     "ModuleName": "MobilePage/棚卸入力_棚番入力",
