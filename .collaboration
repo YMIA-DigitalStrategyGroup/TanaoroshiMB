@@ -9,16 +9,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_data",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-02-26T09:28:44.6093553+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_data.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/tkansayo_tanaoroshi",
@@ -30,45 +21,15 @@
   },
   {
     "ModuleName": "MobilePage/棚卸入力_棚卸開始",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-02-24T15:16:37.3570939+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\棚卸入力_棚卸開始.json",
-      "Pages\\棚卸入力_棚卸開始.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/棚卸入力_棚番入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-02-24T15:16:58.1638185+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\棚卸入力_棚番入力.json",
-      "Pages\\棚卸入力_棚番入力.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/棚卸入力_実棚入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-02-24T15:15:38.2361476+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\棚卸入力_実棚入力.json",
-      "Pages\\棚卸入力_実棚入力.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",

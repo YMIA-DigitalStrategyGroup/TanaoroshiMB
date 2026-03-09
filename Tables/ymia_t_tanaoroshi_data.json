@@ -45,7 +45,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": 0.0000,
+      "DefaultValue": 0.0,
       "Required": true,
       "DatabaseColumnType": "decimal",
       "MaxLength": -1,
