@@ -29,7 +29,17 @@
   },
   {
     "ModuleName": "MobilePage/棚卸入力_実棚入力",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\999D4610",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-08T13:50:47.4385729+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\棚卸入力_実棚入力.json",
+      "Pages\\棚卸入力_実棚入力.rd"
+    ]
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
