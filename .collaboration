@@ -220,15 +220,5 @@
   {
     "ModuleName": "PublishSetting",
     "ModuleType": 41
-  },
-  {
-    "ModuleName": "Table/mname",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-08T13:52:32.2856246+09:00",
-    "ModuleType": 7
   }
 ]
