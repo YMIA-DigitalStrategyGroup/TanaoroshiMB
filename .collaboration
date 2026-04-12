@@ -9,7 +9,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_data",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-04-13T08:03:16.9652832+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\ymia_t_tanaoroshi_data.json"
+    ]
   },
   {
     "ModuleName": "Table/tkansayo_tanaoroshi",
