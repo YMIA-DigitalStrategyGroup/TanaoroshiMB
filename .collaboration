@@ -5,29 +5,11 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_datainput",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T08:19:17.5693143+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_datainput.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_data",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T08:03:16.9652832+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_data.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/tkansayo_tanaoroshi",
@@ -43,31 +25,11 @@
   },
   {
     "ModuleName": "MobilePage/棚卸入力_棚番入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T09:18:20.0494958+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\棚卸入力_棚番入力.json",
-      "Pages\\棚卸入力_棚番入力.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/棚卸入力_実棚入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T07:53:07.0339641+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\棚卸入力_実棚入力.json",
-      "Pages\\棚卸入力_実棚入力.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -231,16 +193,7 @@
   },
   {
     "ModuleName": "DataContectionSet",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T07:58:23.4171598+09:00",
-    "ModuleType": 25,
-    "ToRemoveFiles": [
-      "DataConnectionSet.json"
-    ]
+    "ModuleType": 25
   },
   {
     "ModuleName": "Upload",
@@ -248,30 +201,11 @@
   },
   {
     "ModuleName": "PublishConfiguration",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T08:49:31.8896077+09:00",
-    "ModuleType": 39,
-    "ToRemoveFiles": [
-      "PublishSettingsConfig.json"
-    ]
+    "ModuleType": 39
   },
   {
     "ModuleName": "Plugin",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T09:33:29.9221651+09:00",
-    "ModuleType": 40,
-    "ToRemoveFiles": [
-      "Plugin\\MySqlWrapper.zip",
-      "Plugin\\メニュー／ツリービュー型セル.zip"
-    ]
+    "ModuleType": 40
   },
   {
     "ModuleName": "PublishSetting",
@@ -279,12 +213,6 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-04-13T07:58:46.2265723+09:00",
     "ModuleType": 23
   }
 ]

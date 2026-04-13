@@ -5,14 +5,6 @@
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "Required": true,
       "DatabaseColumnType": "varchar",
-      "MaxLength": 3,
-      "Name": "RECORD_NO",
-      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
-    },
-    {
-      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "Required": true,
-      "DatabaseColumnType": "varchar",
       "MaxLength": 10,
       "Name": "TARGET_YEAR_MONTH",
       "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
@@ -79,6 +71,16 @@
       "MaxLength": -1,
       "Name": "TOROKU_DATETIME",
       "ColumnType": "System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "AutoIncrement": true,
+      "DatabaseColumnType": "bigint",
+      "MaxLength": -1,
+      "Name": "RECORD_NO",
+      "ColumnType": "System.Int64, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     }
   ],
   "ExternalDatabaseInfo": {
@@ -88,9 +90,7 @@
     "SourceTableSchema": ""
   },
   "PrimaryKey": [
-    "RECORD_NO",
-    "TARGET_YEAR_MONTH",
-    "HINBAN"
+    "RECORD_NO"
   ],
   "Indexes": []
 }
