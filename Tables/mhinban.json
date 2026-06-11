@@ -42,6 +42,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "Required": true,
       "DatabaseColumnType": "int",
       "MaxLength": -1,
@@ -50,6 +51,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "Required": true,
       "DatabaseColumnType": "int",
       "MaxLength": -1,
@@ -58,6 +60,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "Required": true,
       "DatabaseColumnType": "int",
       "MaxLength": -1,
@@ -82,6 +85,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "Required": true,
       "DatabaseColumnType": "int",
       "MaxLength": -1,
@@ -90,6 +94,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "Required": true,
       "DatabaseColumnType": "int",
       "MaxLength": -1,
@@ -98,6 +103,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "Required": true,
       "DatabaseColumnType": "int",
       "MaxLength": -1,
@@ -114,6 +120,7 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DefaultValue": 0,
       "Required": true,
       "DatabaseColumnType": "int",
       "MaxLength": -1,

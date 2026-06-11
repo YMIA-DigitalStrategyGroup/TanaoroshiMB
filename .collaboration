@@ -5,29 +5,11 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_datainput",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T11:13:39.3479586+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_datainput.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_data",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T11:13:39.3478883+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_data.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/tkansayo_tanaoroshi",
@@ -35,16 +17,7 @@
   },
   {
     "ModuleName": "Table/mhinban",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-06-11T11:13:39.3479543+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\mhinban.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
