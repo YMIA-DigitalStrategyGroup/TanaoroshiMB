@@ -28,6 +28,7 @@
         "$type": "Forguncy.CustomMenu.ForguncyIconMenuCellType, Forguncy.CustomMenu",
         "Items": [
           {
+            "Value": "入力",
             "Text": "入力",
             "IconPath": "Application/028_edit_8.svg",
             "SelectedIconColor": "Background 1",
@@ -53,7 +54,7 @@
                         "PageName": "棚卸入力_棚卸開始"
                       }
                     ],
-                    "ID": "28c23941-2ea5-443e-ba25-0d06f2094a7d"
+                    "ID": "c2e324e0-f371-497d-848f-b6541f7c0718"
                   }
                 ]
               }
@@ -63,6 +64,7 @@
             ]
           },
           {
+            "Value": "修正",
             "Text": "修正",
             "IconPath": "Mobile/415_message_1.svg",
             "SelectedIconColor": "Background 1",
@@ -87,7 +89,7 @@
                         "PageName": "棚卸入力_棚卸開始"
                       }
                     ],
-                    "ID": "390a3657-ec8f-473b-ae25-d591a34ef7e8"
+                    "ID": "f102158a-580c-4b47-8abb-9623ab9f065d"
                   }
                 ]
               }
@@ -172,4 +174,4 @@
       "Size": "360,40"
     }
   ]
-}//CwSA/hSQw24c9Lxauhhw6S/oJYTWD/lYNkoqSRJK22veQ0ch3M8cvPy+FTkmwzl25mp6MXLiCSUmXbWosm2uKw7ER0bXZs/mVWpg1GuWVI5XCjK86t5VqcEvg5xoysmbBUnlfEA3iS5FV/1+Zh1/RD9G9dHKmnsrJVDg84qoFBk8dlbN1CdaMYAViTZH/5PjuacXYACg+8SGcTuq/AGLObFD5BqkHWKVto8uS0eliCdOEj6snpqbgPffM1OlXzDM1UD9dkbh6XmR/YkV9tWaZQtff4HxpGtAXoqEFf3+dnX6Vj+qcKs2IWXagCvuxr1icV7ujO/5LfWkthjIVvF2WGG7suVUiwHn6QNZ6iJ+dzhiONtswSzrMeQYT6UCEGRfqEOF37oJZydImIFuyRzCah6IKLRpx2JhF5GbWe98izOJjM0b45vlc1PlwBgJD9ZdCF9eCl+qbIHhB/BfHF0ZgQq0NpC4XIu7ep80hb6emAITFVFQYXPiz3M8PoPHpSzh311WPWwtVft9B7PL2/RHbEnp168+8Le4TZb4xvjArSrf36RxJL9bf+gHV31FCSHJ4947494zUGo0LgBl5szSHBVCSeDIDCtZdGBg8WaMeGa0Ah9DieW1o0efynrJjs4axf/BhRiBCEogOi2aqz0XZO+N/hzb1QWjeDGJjCNOAZBM/JiX1QrMowkB15xx9PvCkqY+GtwMWKU/OUUGhhzZjdtnAOQynKjxOSWURa5fen4CGPSjGoZNW2991tBxuppnlBbSCwf8J1DmRnZ9S+WGGJvHuHf6arOWEtp03G3F7JwnTYslM7a3Dyu746RmLX0qx6wrbijwVW7srzVthNN+a98BETkRr5oQSVPyOGBBL5jYe52uplIGqODUCfr7M+Yan3BEBuiJFWQwnOP8RXIMdw==|920
+}//kfT0vwu1vesCTHFlwb6ed5c+61JLjn1TrwfpUZdYAuOM9Jfcm6nlfYR6V+pF1PDcbLEH2wbp4E85FeT8B5h/UNWfFsAZpRHvel3aO3DI8TPkz4AInE9IrKbL7eZTb21f82ke7MwptvMtxh/sjX7xMngrqp+ssObAmedHuTP1NDwY3llHqDLZ0TZ23m4oOC4LNk2pdLyzlVCFLIb1f9YN8Kcjrd++l9V0kk+u1F1mLgWwCFbBLENL7xKXApqy9OQP7R04Xtllw8OC2w1Fqm4Gti1jTwUUktyisCnt0TW0uiqmRAO1OLFlbFxzmqaXK9a4b28oXgARTDVclqet6HhEaH7/mMCSy9QSnnkYfPZ/OtrbwHk0BVF5BVA0JjGB+ZD/R2U11FXj3Ee6v257PxBp0kLGIKJ+d14Bh4lJxxeI2jsk2ZXqSpn9Kd7ipa9BlWwrjWm+VgSYXj5im7KEo0rfUM0ZEgsLmnEibEFoTMABBIBlNb2cKHinnagCWArE0NO+DMdckvaSaI8HK4JG5IVLTEB6bp1CBCpm90CgNTZCe77WOVSjzpqVZI4YLnFVMNC3i60U9aZZVQCc6y5sVPZdP9M72KwCsJY8DJpaEgDUD7muY7FsgP30lk4XXZXL3Cp0qLp8VzZ0V49IQw0qSkjyCq1eYRy5cGY/CPEDTpRpSNC0r1o6QS59/9+ve8LdU1LHnG0NLomkmETPt49Xnukti5v3V3TTmtbZyQgMssoEu4SEjAq98Dcyc5tH5qzCfAW2BJs16S+MMYlYo71rGS2oUzC8pulEflo3m883IGISDBjFOBnZWx6akPn5xhpP46X4MApBQlzDyh2cSGl/41sUTytCHYn9wYdk/80gVDx+r7N1dxzHBMzqIizCuKI83P/k20wpSZkDS6torcjhYGIVbQ==|920
