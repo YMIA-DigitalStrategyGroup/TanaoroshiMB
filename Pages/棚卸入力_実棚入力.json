@@ -296,7 +296,7 @@
                 "BindingInfo": {
                   "TableName": "ymia_t_tanaoroshi_datainput",
                   "ColumnName": "TARGET_YEAR_MONTH",
-                  "GUID": "82d9f08e-a4ec-444f-a93b-2fb4671a5e0e"
+                  "GUID": "ea0910c7-bb24-49e6-a897-6d2ae6a48a11"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -307,7 +307,7 @@
                 "BindingInfo": {
                   "TableName": "ymia_t_tanaoroshi_datainput",
                   "ColumnName": "HINBAN",
-                  "GUID": "4287be7c-fa2c-4cde-91a7-654fde951556"
+                  "GUID": "c867d9e5-322d-4835-90f5-444b78d2417e"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -318,7 +318,7 @@
                 "BindingInfo": {
                   "TableName": "ymia_t_tanaoroshi_datainput",
                   "ColumnName": "TANABAN",
-                  "GUID": "21592cab-37c2-45bf-b64c-ec7234d4d868"
+                  "GUID": "3c6b8938-54f2-4489-b235-382a5ddb338e"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -329,7 +329,7 @@
                 "BindingInfo": {
                   "TableName": "ymia_t_tanaoroshi_datainput",
                   "ColumnName": "TANA_SU",
-                  "GUID": "4809a154-d025-4d18-8fa6-07c5dca51fdc"
+                  "GUID": "576b294f-5d96-45a8-8719-17d0c0bd3764"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -340,7 +340,7 @@
                 "BindingInfo": {
                   "TableName": "ymia_t_tanaoroshi_datainput",
                   "ColumnName": "TOROKUSHA_NAME",
-                  "GUID": "e3f22122-d6cf-42bf-8e58-f24f96b3ed9f"
+                  "GUID": "3ac8e301-fb41-4085-ad57-906bcd06b73a"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -351,7 +351,7 @@
                 "BindingInfo": {
                   "TableName": "ymia_t_tanaoroshi_datainput",
                   "ColumnName": "TOROKU_DATETIME",
-                  "GUID": "db81c129-d285-4087-a1b1-4f1c5bf78c19"
+                  "GUID": "d750bc48-6468-4971-b8a2-c209018d0bc1"
                 },
                 "Value": {
                   "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -1225,4 +1225,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//5eVhYApvXEC67h3ml6NRokNqUnvmyBF0++qCI+Y9/rdyFrnz5UZnip+8uwA47zJlqR3JqUkZ7eXpkLG8k6b/6kfwJgvkDlosOAiKW2f1975cMUaOKRZRxrb+dEQOMS3Gc3EQgiwqy4JJPNwaYy0GE3BuZJgkJ3UuPIoKEAG8inUxM/CE7aYoOB24JHzp8l0LhKLZZOBzAFgua5ke+dvCOcGbvwPO2tJH2qyGRV7+d8z/HfSha1if0/HOay4HJjqvjBsFDVMXksV/Oy2aoUA1MU1GEgX9MBf+/Pqe67SuU3sw0RvN4u0YNxTS50GZDkPJN45rGaha7aD3eCDqk3/NtJWCThTLsiXzAvAnpmnqWrtzahDLKtLA5ZvUeRypE/HV8INOPFDk6IgAJla3AqM+pMxX9Q13uKtX9qpTE6HcM7ZHciC61AguibUkPbroMYzgZTV8Xhc/Gg9mzbfqlWB5Z7ZtYDXiiogxzdHLHjuygP6RQZcPiRQR99o7xumRm7Y8/srPmqosPFBRgg3V6U2yAK6sdsgoqQMynDpd5EA6mo+vFxVeALV9kYSz9E3BIj8SLSYqDJWEzcY0Lwh19xBON6g4bZEG3oEClGtZL9KCBZXe/hrZYaoNc615Wk30te3JTJ+DE0ZQoHp/kvoiYPLCh61aHVDQ8902UnSxRfhfam4cPB1QPyaSv0qYNhd1wUW0Kwfdyfdp42gM2nQiNXh3vGQclZReFttkI2xlmLAJ/8MbgC5BEXUV38MyeyFzTg0qbL3KqR/FKkAfq4Muj4UAdlkESeZx3/fiqH1xosn+gezQ0zr32q2ny9dGMkG6UklmDkBRaSjn9HWRYi4wVr3MJ/uUiO5YUPueK0teWPgQtZXizGzRxsCDdWgelj6XawFYPqXCGdYRwuvXe8xP65tI/w==|920
+}//v8qkfyEjDuaiLnQSKpnem/X9Bwj8ZaE4m6gM9wZWJU+Kf+BhN3Wa2X7Q/69sTEe6SAV8V1Pm6bapDT1c1ZQStQJOEmeGvWpqcfAixFmcuvBaZdwRZ+2UtWOnmVyEktjMn1t5/Z+rHS+Tdn2Ubh5svJEtqoigvatfy74vTsQcVMD7q/qqThTiuqPfEERq27q2w/P2FpR9htM4gl4KrH5ypHHeP+mIPHqlRtbNbmQCEfRgYEOXVoUMkAo0+0+06wYQzvvEfLfm1+0a6e0Z1ilzBZ5REd50FNLDY5ePX1H8+8WLhaYSJ5KaOqpOPYM5NgSE3zXUG0IRi24wkeNotTuTnBJ2DfSZ19I1fsQYP1D6ygoM7eEZ0KX7YeBB5BQE8GlopN85/eP/P9W/HpuhP4X/IHIvlFghQH6WAXWb/54zvPLhRWipqhdGnp0PoYgR6QKYM5dG9+V++rJBbT4AuIQN1HMY42HomJHsexgVk16B88wmNJZt6SZuoIc4rpy2R1uhDwHuq0IRQ4CAYgXQ/puFle3EBrm7qxhscxu/ItLD+hIiuWvYwjsXimOSWzc1sjF+CGl+NVk4SoEO69SF0LxoYBsKIGn9/frVUC/pHDZ3+P8rNIcCUsFO14Io0ihz9ekYU1fJHdHqlLltRtvYJ6ykkLuhOeEi+Mi+599B3fRRAbJgbZ85w/wy4QmvoIUZOuYMqK5ygGIKfp6myceyA8lfo7K7R6frMs94kQUVy6E0e6Bte+gJPZRyDlg0PosPm0eyGVPS1yBQ1libTipgN9vI/Ol05UEgdX6uwrhAY99uovMjddO73oKCLGG3u5h61uWTpihe+igzxysFljfoj6O+i6D7lzaUv0M9jlYsBkOSmkSi6Pmz4SZBqoJBGPWEQOvHz+4gz9LkXli5sOKIC4Jeqw==|920
