@@ -1,0 +1,425 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1
+    ],
+    "Count": 30
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "0,1": "登録日",
+    "1,1": "User",
+    "3,1": "タイトル",
+    "6,1": "内容・コメント等",
+    "27,1": "登録",
+    "27,10": "閉じる"
+  },
+  "Formulas": {
+    "0,4": "TODAY()"
+  },
+  "AttachInfos": {
+    "0,4": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "作成日",
+        "GUID": "3d7c2407-d2d6-433b-8034-44781b34f88b"
+      }
+    },
+    "1,4": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "登録者",
+        "GUID": "75d37d0c-40a0-464f-a34c-c64777ce054b"
+      },
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "3,5": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "不明品タイトル",
+        "GUID": "632d989d-6d51-4ea2-bd1e-133ab8c281d1"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,1": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "備考",
+        "GUID": "aa0e1e5c-68dc-42d9-811b-bb15ae1baf28"
+      },
+      "CellType": {
+        "$type": "Forguncy.MultilineTextBox, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "15,1": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "画像1",
+        "GUID": "dbea1791-4069-41cd-9400-234b918be2dd",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "UploadImageLimit": {
+          "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
+        }
+      }
+    },
+    "21,1": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "画像2",
+        "GUID": "dad9212e-8066-44e0-b0bb-08d633a1d5ff",
+        "IsImagePath": true
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "UploadImageLimit": {
+          "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
+        }
+      }
+    },
+    "27,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "登録しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "ymia_t_tanaoroshi_fumei",
+                    "UpdateType": "add",
+                    "ShowConfirm": false
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "登録しました！！"
+                  },
+                  {
+                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+                    "Disabled": true
+                  }
+                ],
+                "ID": "d570b05b-b17e-4155-a4b0-dd36e14b97db"
+              }
+            ]
+          }
+        ],
+        "Text": "登録",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "27,10": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "Disabled": true
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 3,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderTop": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4,
+        "HorizontalAlignment": 5,
+        "VerticalAlignment": 6,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderLeft": 0
+      },
+      {
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 24.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "black",
+        "Body",
+        "[AUTO]General",
+        "Accent 1 80",
+        "@",
+        "Left",
+        "Top"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,1": 0,
+      "0,2": 0,
+      "0,3": 0,
+      "0,4": 1,
+      "0,5": 2,
+      "0,6": 2,
+      "0,7": 2,
+      "0,8": 3,
+      "1,1": 4,
+      "1,2": 5,
+      "1,3": 5,
+      "1,4": 6,
+      "1,5": 2,
+      "1,6": 2,
+      "1,7": 2,
+      "1,8": 3,
+      "3,1": 7,
+      "3,2": 8,
+      "3,3": 8,
+      "3,4": 9,
+      "3,5": 10,
+      "3,6": 8,
+      "3,7": 8,
+      "3,8": 8,
+      "3,9": 8,
+      "3,10": 8,
+      "3,11": 8,
+      "3,12": 8,
+      "3,13": 8,
+      "3,14": 8,
+      "3,15": 8,
+      "3,16": 9,
+      "4,1": 11,
+      "4,2": 12,
+      "4,3": 12,
+      "4,4": 13,
+      "4,5": 12,
+      "4,6": 12,
+      "4,7": 12,
+      "4,8": 12,
+      "4,9": 12,
+      "4,10": 12,
+      "4,11": 12,
+      "4,12": 12,
+      "4,13": 12,
+      "4,14": 12,
+      "4,15": 12,
+      "4,16": 13,
+      "7,1": 14,
+      "7,2": 8,
+      "7,3": 8,
+      "7,4": 8,
+      "7,5": 8,
+      "7,6": 8,
+      "7,7": 8,
+      "7,8": 8,
+      "7,9": 8,
+      "7,10": 8,
+      "7,11": 8,
+      "7,12": 8,
+      "7,13": 8,
+      "7,14": 8,
+      "7,15": 8,
+      "7,16": 9,
+      "8,1": 15,
+      "8,16": 16,
+      "9,1": 15,
+      "9,16": 16,
+      "10,1": 15,
+      "10,16": 16,
+      "11,1": 15,
+      "11,16": 16,
+      "12,1": 15,
+      "12,16": 16,
+      "13,1": 11,
+      "13,2": 12,
+      "13,3": 12,
+      "13,4": 12,
+      "13,5": 12,
+      "13,6": 12,
+      "13,7": 12,
+      "13,8": 12,
+      "13,9": 12,
+      "13,10": 12,
+      "13,11": 12,
+      "13,12": 12,
+      "13,13": 12,
+      "13,14": 12,
+      "13,15": 12,
+      "13,16": 13,
+      "21,1": 17,
+      "26,1": 17,
+      "26,2": 17,
+      "26,3": 17,
+      "26,4": 17,
+      "26,5": 17,
+      "26,6": 17,
+      "26,7": 17,
+      "26,8": 17,
+      "26,9": 17,
+      "26,10": 17,
+      "26,11": 17,
+      "26,12": 17,
+      "27,1": 18,
+      "27,10": 18,
+      "27,11": 17,
+      "27,12": 17,
+      "27,13": 17,
+      "27,14": 17,
+      "27,15": 17,
+      "27,16": 17,
+      "28,10": 17,
+      "28,11": 17,
+      "28,12": 17,
+      "28,13": 17,
+      "28,14": 17,
+      "28,15": 17,
+      "28,16": 17
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "3,1,2,4",
+    "0,1,1,3",
+    "1,1,1,3",
+    "3,5,2,12",
+    "0,4,1,5",
+    "1,4,1,5",
+    "7,1,7,16",
+    "27,1,2,7",
+    "27,10,2,7",
+    "15,1,5,16",
+    "21,1,5,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "棚卸メニュー",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//cC+rrLMjeO2CBOK3ZzBD1B5L/tl5qccw/j516YYmZ4e7+cq/xzP/TEfE1t5MiXLJhsebJFoUbsTeyPBswuaP2gnisbAdbKKX2IMGUH2Wii0F181+fR9Xc5X4mYRVLSFUYEbPKTmdFBUPshURzmMinCqnhun5J0eSxwEFaRdZ/mb29WoJ1U7GiTh3lDA8DaO6tj3AkymN1Da5bJge8IcoegZJi2IskgUvm6QryrOb8buxeiG0BSL3s7Gr2tBpuUJoPB+BUO7FRRHpkIHOo3sFaGxpnLJ0LdYhBqf7QteYiBMapUCBXpJGuNLVOVgiMRNP6V45dyy0sEIADq7zaZPs6YMsvUBsgLWPtq22j/OkKZzeiuVdK2Vl1E6ldEaEpz5+y+MoFdSQkpyMmtXsNgx9W9XYPI9EW87vLLiTRGXHBHMR2CzI4DNgyvrMH76u7pYjLdPrKu6mqa5I1HmlA+nFhSOHFaDHJsjnWfHaRNk7pN0mBEwe4Ac2N3ZMmTDlAVvW8i7P3pHm/9TIRRa5/3Q/NV/Qquw/98n7+J3TzYvxRngDlHe3pMDwRQhT6swUSnl2ZqxOyI0855JPcoHZvRmmz80/WMdqahx3Y9hrwb6oIU00bQxGwAx1tazcjHhruHwtqEKYtAWVSX8pYsS1XsoXu6HpcaUHiYfTBG7VkFw2P0zOzyDnlpp6cIXtU4IV9NAor4Puc0acDxydz1Sugq/ECdPxKWSuKZh/GPNhiyKnd0UmCrwHhuZMMRy2gHRGZ2AllX6epIiyUhELnyMJ/a21l8ei4ShpHucKJg4XXHUsADI6nQPsXv9nvSHgMadN6FPW3TIh3gZ3sW9ERQ5I7U2cNc9oHKBdMvEGStgqIvx+WZyWDLe8iEwLUvyIAMHlMNJD+aP1s9Eac2ESaXcpVmALGA==|920
