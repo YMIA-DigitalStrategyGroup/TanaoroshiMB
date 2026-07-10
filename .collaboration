@@ -201,23 +201,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T15:44:35.9915347+09:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": [
-      "Upload\\8f175957-1bd8-4431-888b-86f27d10c715_スクリーンショット 2026-05-10 071055.png",
-      "Upload\\8f175957-1bd8-4431-888b-86f27d10c715_スクリーンショット 2026-05-10 071055.small.png",
-      "Upload\\c0575b0b-900a-40e3-80e1-8bbf31317849_GoogleCloudAgentAPI一覧.medium.png",
-      "Upload\\c0575b0b-900a-40e3-80e1-8bbf31317849_GoogleCloudAgentAPI一覧.png",
-      "Upload\\c0575b0b-900a-40e3-80e1-8bbf31317849_GoogleCloudAgentAPI一覧.small.png",
-      "Upload\\fc9e1396-a6d9-44d2-8db8-e0a6566e9f81_forguncy-icon.medium.png",
-      "Upload\\fc9e1396-a6d9-44d2-8db8-e0a6566e9f81_forguncy-icon.png",
-      "Upload\\fc9e1396-a6d9-44d2-8db8-e0a6566e9f81_forguncy-icon.small.png"
-    ]
+    "ModuleType": 26
   },
   {
     "ModuleName": "PublishConfiguration",
@@ -236,26 +220,7 @@
     "ModuleType": 2
   },
   {
-    "ModuleName": "Table/ymia_t_tanaoroshi_fumei1",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:41:46.0734105+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_fumei1.json"
-    ]
-  },
-  {
     "ModuleName": "Table/ymia_t_tanaoroshi_fumei",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:41:46.0734233+09:00",
     "ModuleType": 7
   }
 ]
