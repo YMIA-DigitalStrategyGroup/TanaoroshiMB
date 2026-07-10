@@ -247,7 +247,7 @@
       "UserName": "UNITY\\AA121806",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-07-10T14:32:10.8493852+09:00",
+    "LockDateTime": "2026-07-10T14:39:18.051+09:00",
     "ModuleType": 2,
     "ToRemoveFiles": [
       "Pages\\不明品番登録.json",
@@ -256,12 +256,12 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_fumei",
-    "State": 1,
+    "State": 2,
     "LockedBy": {
       "UserName": "UNITY\\AA121806",
       "Email": "example@example.com"
     },
-    "LockDateTime": "2026-07-10T14:29:18.304629+09:00",
+    "LockDateTime": "2026-07-10T14:39:18.0504636+09:00",
     "ModuleType": 7,
     "ToRemoveFiles": [
       "Tables\\ymia_t_tanaoroshi_fumei.json"
