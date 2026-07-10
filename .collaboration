@@ -5,11 +5,29 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_datainput",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-10T14:31:02.8747289+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\ymia_t_tanaoroshi_datainput.json"
+    ]
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_data",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-10T14:31:02.8747232+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\ymia_t_tanaoroshi_data.json"
+    ]
   },
   {
     "ModuleName": "Table/tkansayo_tanaoroshi",
@@ -201,7 +219,14 @@
   },
   {
     "ModuleName": "Upload",
-    "ModuleType": 26
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-10T14:31:02.8751286+09:00",
+    "ModuleType": 26,
+    "ToRemoveFiles": []
   },
   {
     "ModuleName": "PublishConfiguration",
