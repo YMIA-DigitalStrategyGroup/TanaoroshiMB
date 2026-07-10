@@ -266,5 +266,15 @@
     "ToRemoveFiles": [
       "Tables\\ymia_t_tanaoroshi_fumei.json"
     ]
+  },
+  {
+    "ModuleName": "Table/ymia_t_tanaoroshi_fumei1",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-10T14:39:50.8855022+09:00",
+    "ModuleType": 7
   }
 ]
