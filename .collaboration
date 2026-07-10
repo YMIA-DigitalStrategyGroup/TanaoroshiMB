@@ -5,29 +5,11 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_datainput",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:31:02.8747289+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_datainput.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_data",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:31:02.8747232+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_data.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/tkansayo_tanaoroshi",
@@ -219,14 +201,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:31:02.8751286+09:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": []
+    "ModuleType": 26
   },
   {
     "ModuleName": "PublishConfiguration",
@@ -242,39 +217,10 @@
   },
   {
     "ModuleName": "MobilePage/不明品番登録",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:39:18.051+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\不明品番登録.json",
-      "Pages\\不明品番登録.rd"
-    ]
-  },
-  {
-    "ModuleName": "Table/ymia_t_tanaoroshi_fumei",
-    "State": 2,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:39:18.0504636+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_fumei.json"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_fumei1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-10T14:39:50.8855022+09:00",
     "ModuleType": 7
   }
 ]
