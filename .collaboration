@@ -33,17 +33,7 @@
   },
   {
     "ModuleName": "MobilePage/棚卸入力_実棚入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T14:47:43.5808956+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\棚卸入力_実棚入力.json",
-      "Pages\\棚卸入力_実棚入力.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -103,17 +93,7 @@
   },
   {
     "ModuleName": "MobilePage/FGC_ログイン_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T14:25:29.4248388+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_ログイン_モバイル.json",
-      "Pages\\ビルトイン モバイルページ\\FGC_ログイン_モバイル.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/FGC_401ページ_モバイル",
@@ -237,39 +217,14 @@
   },
   {
     "ModuleName": "MobilePage/不明品番登録",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T14:34:20.3236588+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\不明品番登録.json",
-      "Pages\\不明品番登録.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_fumei",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T14:46:10.7456422+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_fumei.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Image/img_share_01.png",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-07-21T14:26:10.2151271+09:00",
     "ModuleType": 38
   }
 ]

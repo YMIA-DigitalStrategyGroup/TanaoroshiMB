@@ -13,6 +13,9 @@
     "6,29": "ODATA(\"ymia_v_mhinban_lastest?$select=HINMEI&$filter=HINBAN eq \"&IF(ISBLANK(F$7),\"null\",\"'\"&F$7&\"'\"))",
     "8,29": "ODATA(\"ymia_t_tanaoroshi_data?$select=ZAIKO_SU&$filter=HINBAN eq \"&IF(ISBLANK(F7),\"null\",\"'\"&F7&\"'\")&\" and TARGET_YEAR_MONTH eq \"&IF(ISBLANK(F2),\"null\",\"'\"&F2&\"'\"))",
     "10,29": "ODATA(\"ymia_v_mhinban_lastest?$select=TANI_NAME&$filter=HINBAN eq \"&IF(ISBLANK(F$7),\"null\",\"'\"&F$7&\"'\"))",
-    "13,14": "IF(ISERROR(AD11),\"\",AD11)"
+    "13,14": "IF(ISERROR(AD11),\"\",AD11)",
+    "23,29": "IF(ISERROR(AD22),\"\",LEFT(AD22,6))",
+    "21,29": "ODATA(\"ymia_v_mhinban_lastest?$select=TANABAN&$filter=HINBAN eq \"&IF(ISBLANK(F7),\"null\",\"'\"&F7&\"'\"))",
+    "3,14": "IF(AD24<>\"\",AD24,\"\")"
   }
 }

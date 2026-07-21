@@ -34,7 +34,8 @@
     "17,1": "不良品数",
     "19,25": "登録棚卸数",
     "20,1": "確定",
-    "20,7": "クリア"
+    "20,7": "クリア",
+    "21,25": "マスタ上の棚番"
   },
   "Formulas": {
     "15,29": "NOW()",
@@ -47,7 +48,10 @@
     "6,29": "ODATA(\"ymia_v_mhinban_lastest?$select=HINMEI&$filter=HINBAN eq \"&IF(ISBLANK(F$7),\"null\",\"'\"&F$7&\"'\"))",
     "8,29": "ODATA(\"ymia_t_tanaoroshi_data?$select=ZAIKO_SU&$filter=HINBAN eq \"&IF(ISBLANK(F7),\"null\",\"'\"&F7&\"'\")&\" and TARGET_YEAR_MONTH eq \"&IF(ISBLANK(F2),\"null\",\"'\"&F2&\"'\"))",
     "10,29": "ODATA(\"ymia_v_mhinban_lastest?$select=TANI_NAME&$filter=HINBAN eq \"&IF(ISBLANK(F$7),\"null\",\"'\"&F$7&\"'\"))",
-    "13,14": "IF(ISERROR(AD11),\"\",AD11)"
+    "13,14": "IF(ISERROR(AD11),\"\",AD11)",
+    "23,29": "IF(ISERROR(AD22),\"\",LEFT(AD22,6))",
+    "21,29": "ODATA(\"ymia_v_mhinban_lastest?$select=TANABAN&$filter=HINBAN eq \"&IF(ISBLANK(F7),\"null\",\"'\"&F7&\"'\"))",
+    "3,14": "IF(AD24<>\"\",AD24,\"\")"
   },
   "AttachInfos": {
     "1,5": {
@@ -70,7 +74,10 @@
           }
         ],
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
-      }
+      },
+      "RulesGuidList": [
+        "97dae73f-2ecc-461a-a803-9766147d1e24"
+      ]
     },
     "6,5": {
       "CellType": {
@@ -155,7 +162,18 @@
         "CommandList": [
           {
             "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
-            "PageName": "不明品番登録"
+            "PageName": "不明品番登録",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=棚卸入力_実棚入力!F4"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=不明品番登録!E4"
+                }
+              }
+            ]
           }
         ],
         "Text": "不明分",
@@ -646,6 +664,20 @@
         "FontFamily": 1,
         "Foreground": 6,
         "Formatter": 2
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 12,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
       }
     ],
     "Types": {
@@ -1174,7 +1206,42 @@
       "21,13": 8,
       "21,14": 8,
       "21,15": 8,
-      "21,16": 8
+      "21,16": 8,
+      "21,25": 7,
+      "21,26": 1,
+      "21,27": 1,
+      "21,28": 1,
+      "21,29": 28,
+      "21,30": 1,
+      "21,31": 1,
+      "21,32": 1,
+      "21,33": 1,
+      "21,34": 1,
+      "21,35": 1,
+      "21,36": 1,
+      "21,37": 1,
+      "22,25": 1,
+      "22,26": 1,
+      "22,27": 1,
+      "22,28": 1,
+      "22,29": 29,
+      "22,30": 29,
+      "22,31": 29,
+      "22,32": 29,
+      "22,33": 29,
+      "22,34": 29,
+      "22,35": 29,
+      "22,36": 29,
+      "22,37": 29,
+      "23,29": 3,
+      "23,30": 3,
+      "23,31": 3,
+      "23,32": 3,
+      "23,33": 3,
+      "23,34": 3,
+      "23,35": 3,
+      "23,36": 3,
+      "23,37": 3
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -1220,7 +1287,11 @@
     "13,1,4,4",
     "13,5,4,9",
     "13,14,4,3",
-    "10,14,2,3"
+    "10,14,2,3",
+    "21,25,2,4",
+    "21,29,2,9",
+    "23,29,1,9",
+    "3,14,2,4"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -1241,10 +1312,27 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "IsMobilePage": true
+    "IsMobilePage": true,
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.FormulaRule, ServerDesignerCommon",
+          "Formula": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=AND(棚卸入力_実棚入力!$AD$24<>\"\",棚卸入力_実棚入力!$F$4<>棚卸入力_実棚入力!$AD$24)"
+          },
+          "GUID": "97dae73f-2ecc-461a-a803-9766147d1e24",
+          "StyleInfo": {
+            "Background": "Accent 5 60",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//f7svQ9chaPj3wpFvczQSeaNTAzoVR5F3IXyLOLwt1NJLHZLTUZGHAVVy88wM036APol7klZkp6bAFvB32L23KTZrz1uLlsbZi1odiDPMokVaY2VK4pKSvG7R/b8ckm+P8RKUKydf6OXqRP8iSi1paHJo1jUONhFI63fBLn5fcDyzTCEDdUBxXlGtX3woFTXLBETL8ZSKVWHmTnMXQUHhDnZPFwX85idtV3JaTP6pQLuFMXg6ExqBqTyzc1nR8415ma/uISMw5mddWwi1bIAY9/E3Dc43IjEKkOgPYCRb3jeyNCjh4cYFb/rt1Ww+s4j6OJzvRc5KbVrjg6Qg6rGCsupEDF0mdYDZS6bCQHk3NyGBsOG023I1wAYfCJ/VRCFi1M2QeTuHq9Sy5UZfX3sAMEkijTNQteeZD3rvggC6ydNNX9r4HXGe3uLY27EX62D2DF1JGmeif+KRzSKje66sFJTp4grvDAL54RQfHLUfEmJwarW/sosT3VlVeR4zxxDThF1bj03tesMnc8Db8ZKkLXuSRhJW8hCYdNmXfMYxR1BQL6m54bu848S6R0MxT7SllEQNIXneyxRzH+CHDGqgTbFJrh+IjLBSObr3LZ3xeeMFLLuT+8rU4aSYwwaOgcNC/uACGaCLclbBFP2Tt/PECrHsB7Jw/5q+aMWVr1gViqPs1aIK3XDdS93tRqxJ+NXr1b8qpDPUfqnyhdCGlkEaJx43w0g10WWuBA7NEQJCslLxYEcDQQ1nux+I2XY6sp1kOyZ6sNjg8ghTD/z7j/FEtBja6Ht2F0+vlMQ70uA1Y4MmXOTMwoI5yCSMdhBYiM9vWqYNo0AUJUxj2Q6r/UGAnE5PSAR6g7EF1QxlGOnDhEikVzgSYZxqbTZzB4FDXLMNKUlXYPP+uwSJRtPOp3ZiCg==|920
+}//Y/ALWzvlD5hYU50TInN+qBwv/XVns/Pu7if179G3oNhKwWZ3h/lQ7qUyvGyFvOQCTYE61hA3XBdiEa1xhLzeQdmjle9YMEehRJQqg1voq0C2usZ33lONJBYhp1qRmbo8uLN0SW+Nz3pN8MXUVUrNZ0ARmy97M3ahXQkKH8GTXQw2S4KNyK5kPO1MHEgxyvqZyVVF08rh0EVep8Jdvu6Rf1cNzfBuuRMtJoq1OyFJQkQLmJ1FpIrDr9wfC3yNOAUOr1tfYkDpVCM8mvV6RLLJjApRy2Q1iqh854M5UywJTW++JsnQTNJAb7+4fqzHzWzVRyfdd0b6k7t7CSq0BKD2Gob/5jqpqx5HL2u7FwYXIDrm/Uh0IcEMmEQmB4wim+cQKQdaaYtaU/J0aXrqx+NpMNtzFaWfEqGXwdha3qXrLnNUmr4bGPbZs68JX0+aS46qPlOk7LB8Lu/ZTXM1l8sm9T9r1auSe+T3olD5swFesi+FyW8znfbgms8Jl1vgOq8nCqaknUgUW9IApiqTZmUOZZxzoUPWbCttJhiULsUuChskYzrnUMOeIDDSoq2Nxg67uDR2taKBrlVVlvqiv2jRizD60XLD3IB8+RmPE2zANmBXjwdYZKCcVShnslyK5fqNlAGST0eRgH1bbQ62g8EDSh5US0UfH+WJBfDLsoy6kpNFC10ZxszGFeov0PFj1satlaStM7C+2JU77buLr4y9uwozHzM6fAmzimWhjH2xd5C5EUflQ+HDjULyWidT5m3M7PSpmVrY5XJwx9ywRGLcTwWoKg/qUeVxl+H5TEK1GdPIgDPCjKDA077ZZHvd9HPwbUsIwTFyVrv5mmh9rvFqPb1HiuUkS2HK3PzBSsn2t2eFF7mgEDCIc8fxMiiOQ4DACwQVJpla737eT3q9GyrILA==|920

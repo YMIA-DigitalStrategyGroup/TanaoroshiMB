@@ -1,19 +1,7 @@
 {
   "Rows": {
     "RowColumnAttachedInfos": {
-      "0": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 20.0,
-          "Mode": 2,
-          "MinLength": {
-            "Unit": 1
-          },
-          "MaxLength": {
-            "Value": 1.0
-          }
-        }
-      },
-      "30": {
+      "26": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -26,7 +14,7 @@
         }
       }
     },
-    "Count": 31
+    "Count": 27
   },
   "Cols": {
     "RowColumnAttachedInfos": {
@@ -42,7 +30,7 @@
           }
         }
       },
-      "18": {
+      "35": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 20.0,
           "Mode": 2,
@@ -55,23 +43,21 @@
         }
       }
     },
-    "Count": 19
+    "Count": 36
   },
   "Values": {
-    "8,3": "ログイン",
-    "20,3": "ログイン",
-    "23,3": "パスワードを忘れた場合",
-    "28,1": "Administratorアカウント：Administrator\nパスワード：123456"
+    "5,4": "棚卸入力アプリ",
+    "17,4": "ログイン",
+    "19,4": "パスワードを忘れた場合",
+    "21,4": "バーコード",
+    "21,12": "UID/PASS\r\n設定"
+  },
+  "Formulas": {
+    "21,21": "RIGHT(V20,LEN(V20)-FIND(\"%\",V20))",
+    "20,21": "LEFT(V20,FIND(\"%\",V20)-1)"
   },
   "AttachInfos": {
-    "5,3": {
-      "CellType": {
-        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
-        "TemplateKey": "_RS_Normal1",
-        "ImagePath": "fgc_logo_dark.svg"
-      }
-    },
-    "12,3": {
+    "9,4": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "SavedValidators": [
@@ -93,7 +79,7 @@
         "IgnoreBlank": false
       }
     },
-    "15,3": {
+    "12,4": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
         "ShowPassword": true,
@@ -116,7 +102,7 @@
         "IgnoreBlank": false
       }
     },
-    "18,3": {
+    "15,4": {
       "CellType": {
         "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
         "Caption": "ログインしたままにする",
@@ -124,7 +110,7 @@
         "ForguncyAttribute": "LogIn_RememberMe"
       }
     },
-    "20,3": {
+    "17,4": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "Text": "ログイン",
@@ -133,7 +119,7 @@
         "ForguncyAttribute": "LogIn_Button"
       }
     },
-    "23,3": {
+    "19,4": {
       "CellType": {
         "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
         "CommandList": [
@@ -145,6 +131,62 @@
         "Text": "パスワードを忘れた場合",
         "TemplateKey": "_RS_Main"
       }
+    },
+    "21,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "SmartPhoneCommand.SmartPhoneCommand, SmartPhoneCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=FGC_ログイン_モバイル!V20"
+            }
+          }
+        ],
+        "Text": "バーコード",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Mobile/433_qr_code_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "21,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!E10"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!V21"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!E13"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!V22"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "UID/PASS\r\n設定",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
     }
   },
   "StyleDatas": {
@@ -153,72 +195,138 @@
         "FontFamily": 0,
         "FontSize": 13.333333015441895,
         "Foreground": 1,
+        "Formatter": 2,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
         "FontSize": 16.0,
-        "Foreground": 2,
-        "VerticalAlignment": 3,
+        "Foreground": 3,
+        "VerticalAlignment": 4,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
         "FontSize": 24.0,
-        "FontWeight": 4,
-        "Foreground": 5,
-        "VerticalAlignment": 6,
+        "FontWeight": 5,
+        "Foreground": 6,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 7,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
         "FontSize": 14.666666666666666,
-        "Foreground": 7,
-        "Formatter": 8,
+        "Foreground": 8,
+        "Formatter": 9,
         "Underline": false,
-        "Strikethrough": false
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
       },
       {
         "FontFamily": 0,
         "FontSize": 14.666666666666666,
-        "Foreground": 9,
+        "Foreground": 11,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 12,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 2,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
         "FontSize": 16.0,
-        "Formatter": 10,
+        "Formatter": 2,
+        "HorizontalAlignment": 4,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 2,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 13,
+        "FontFamily": 0,
+        "FontSize": 14.666666666666666,
+        "Formatter": 2,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 13,
+        "FontFamily": 0,
+        "FontSize": 16.0,
+        "Formatter": 2,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontFamily": 0,
-        "FontSize": 16.0,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "Underline": false,
-        "Strikethrough": false
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderRight": 0
       },
       {
         "FontFamily": 0,
         "FontSize": 13.333333015441895,
-        "Foreground": 11,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
+        "Foreground": 14,
+        "Formatter": 2,
+        "HorizontalAlignment": 4,
         "Underline": true,
-        "Strikethrough": false
-      },
-      {
-        "FontFamily": 0,
-        "FontSize": 12.0,
-        "Foreground": 12,
-        "Formatter": 10,
-        "HorizontalAlignment": 3,
-        "Underline": false,
         "Strikethrough": false
       }
     ],
@@ -226,6 +334,7 @@
       "Strs": [
         "Body",
         "#FF000000",
+        "[AUTO]General",
         "Text 1 35",
         "Center",
         "Bold",
@@ -233,37 +342,185 @@
         "Bottom",
         "Text 1 15",
         "@",
+        "black",
         "#FF7F7F7F",
-        "[AUTO]General",
+        "#FF0070C0",
+        "#FF00B050",
         "#FF538BD5",
         "Background 1 0"
+      ],
+      "Borders": [
+        {
+          "Color": 10
+        }
       ]
     },
     "CellStyles": {
-      "5,3": 0,
-      "7,17": 1,
-      "8,3": 2,
-      "12,3": 3,
-      "15,3": 3,
-      "18,3": 4,
-      "20,3": 5,
-      "23,3": 6,
-      "24,3": 7,
-      "28,1": 8
+      "2,4": 0,
+      "4,18": 1,
+      "4,19": 1,
+      "4,20": 1,
+      "4,21": 1,
+      "4,22": 1,
+      "4,23": 1,
+      "4,24": 1,
+      "4,25": 1,
+      "4,26": 1,
+      "4,27": 1,
+      "4,28": 1,
+      "4,29": 1,
+      "4,30": 1,
+      "4,31": 1,
+      "4,32": 1,
+      "4,33": 1,
+      "4,34": 1,
+      "5,4": 2,
+      "9,4": 3,
+      "9,5": 4,
+      "9,6": 4,
+      "9,7": 4,
+      "9,8": 4,
+      "9,9": 4,
+      "9,10": 4,
+      "9,11": 4,
+      "9,12": 4,
+      "9,13": 4,
+      "9,14": 4,
+      "9,15": 4,
+      "9,16": 4,
+      "10,4": 4,
+      "10,5": 4,
+      "10,6": 4,
+      "10,7": 4,
+      "10,8": 4,
+      "10,9": 4,
+      "10,10": 4,
+      "10,11": 4,
+      "10,12": 4,
+      "10,13": 4,
+      "10,14": 4,
+      "10,15": 4,
+      "10,16": 4,
+      "12,4": 3,
+      "12,5": 4,
+      "12,6": 4,
+      "12,7": 4,
+      "12,8": 4,
+      "12,9": 4,
+      "12,10": 4,
+      "12,11": 4,
+      "12,12": 4,
+      "12,13": 4,
+      "12,14": 4,
+      "12,15": 4,
+      "12,16": 4,
+      "13,4": 4,
+      "13,5": 4,
+      "13,6": 4,
+      "13,7": 4,
+      "13,8": 4,
+      "13,9": 4,
+      "13,10": 4,
+      "13,11": 4,
+      "13,12": 4,
+      "13,13": 4,
+      "13,14": 4,
+      "13,15": 4,
+      "13,16": 4,
+      "15,4": 5,
+      "17,4": 6,
+      "19,4": 7,
+      "19,5": 8,
+      "19,6": 8,
+      "19,7": 8,
+      "19,8": 8,
+      "19,9": 8,
+      "19,10": 8,
+      "19,11": 8,
+      "19,12": 8,
+      "19,13": 8,
+      "19,14": 8,
+      "19,15": 8,
+      "19,16": 8,
+      "19,21": 9,
+      "19,22": 9,
+      "19,23": 9,
+      "19,24": 9,
+      "19,25": 9,
+      "19,26": 9,
+      "19,27": 9,
+      "19,28": 9,
+      "19,29": 9,
+      "19,30": 9,
+      "19,31": 9,
+      "19,32": 9,
+      "19,33": 9,
+      "19,34": 9,
+      "20,4": 10,
+      "20,5": 10,
+      "20,6": 10,
+      "20,7": 10,
+      "20,8": 10,
+      "20,9": 10,
+      "20,10": 10,
+      "20,11": 10,
+      "20,12": 10,
+      "20,13": 10,
+      "20,14": 10,
+      "20,15": 10,
+      "20,16": 10,
+      "20,21": 11,
+      "20,22": 12,
+      "20,23": 12,
+      "20,24": 12,
+      "20,25": 12,
+      "20,26": 12,
+      "20,27": 12,
+      "20,28": 12,
+      "20,29": 12,
+      "20,30": 12,
+      "20,31": 12,
+      "20,32": 12,
+      "20,33": 12,
+      "20,34": 13,
+      "21,4": 14,
+      "21,9": 10,
+      "21,10": 10,
+      "21,11": 10,
+      "21,12": 15,
+      "21,21": 16,
+      "21,22": 17,
+      "21,23": 17,
+      "21,24": 17,
+      "21,25": 17,
+      "21,26": 17,
+      "21,27": 17,
+      "21,28": 17,
+      "21,29": 17,
+      "21,30": 17,
+      "21,31": 17,
+      "21,32": 17,
+      "21,33": 17,
+      "21,34": 18,
+      "24,4": 19
     },
     "SheetStyle": {
+      "Background": 15,
       "FontFamily": 0
     }
   },
   "Spans": [
-    "28,1,2,17",
-    "12,3,2,13",
-    "15,3,2,13",
-    "18,3,1,13",
-    "20,3,2,13",
-    "23,3,1,13",
-    "5,3,3,7",
-    "8,3,2,13"
+    "9,4,2,13",
+    "12,4,2,13",
+    "15,4,1,13",
+    "17,4,2,13",
+    "5,4,2,13",
+    "19,4,1,13",
+    "21,4,2,5",
+    "21,12,2,5",
+    "19,21,1,14",
+    "20,21,1,14",
+    "21,21,1,14"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -277,26 +534,38 @@
     "PaperSize": {},
     "Margin": {}
   },
+  "Pictures": [
+    {
+      "Name": "161c848b-31cc-41c3-b591-2bc922122503.png",
+      "ForguncyPictureName": "img_share_01.png",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "Location": "81,12",
+      "Size": "258,80"
+    }
+  ],
   "BackgroundPictures": [
     {
       "Name": "0ff17210-2337-4c02-b20c-183f048a4b20.jpg",
+      "DisplayName": "背景画像1",
       "ForguncyPictureName": "PCLoginBackground",
       "ForguncyPictureSourceType": 2,
       "StyleInfo": {
         "Fill": null
       },
       "IsAutomaticFill": false,
-      "Size": "380,620"
+      "Size": "720,540"
     },
     {
       "Name": "d822c6ed-a84e-44a2-b25e-28272e255a9c.png",
+      "DisplayName": "背景画像2",
       "StyleInfo": {
         "CornerRadius": 20.0,
         "Fill": "Background 1 0"
       },
       "IsAutomaticFill": false,
-      "Location": "20,60",
-      "Size": "340,460"
+      "Location": "40,0",
+      "Size": "340,520"
     }
   ]
-}//+gGuOmwh4wbND0z9B3GK7GBs6tWILWoIvOfaQDoxpnphb+jNtLia8ipLUYmnlawaptEGsJuulgL7MkHlLlot5YW6PxecRVSWU23nnMH+uGc24AR6YHVDDJ0kVbroKlLrrpuHSIEgnUpSA8qJNEk/1SdVtA7zJEFJXBubN5Mkjs/bEjTjAK474lllfudsBNr1WRtVj+Lm6bNEIGgjyQGfXuAiAPvf/N+0AMK0LqJOHfhpX/qM9pxX5/spHmwE7TCt+JkFadQov/R9YnwaJNizyFS9+lp1wV9ZQAughGXLqAyEufSHj+ggerSUWaQpqy5h49cDpS+0Sv9XeVG/dhdkJ8mLORNAP3qYjizeU2nQdOqWjJMjX/az3v4oIgSEM2dLQvz3sY7V9f412tyPMAYjOZ7c1pxXfwjegVs6FN+IWtwCIOzm1gZmscILPSHTO0ubRGJDj7n/RJDMSkhM6CQk/Dqf0O2Rlpi4Gx/0yFgwu7X9fAhZBIQRHH2wKeJhhctnwTEGxwrsGTjQsVONoccaofabfvhAOv+cTLXmYFFq/dQWBFIDsmXuJsaapyeLO0jl0Oj9OCuEXUsgoYHnIu0WcNVDUmJOW51bYqHN3YZTlksxTJ94LqbmRtGjHIjqzYp3zR4punbq5u/bJp248fiUrtB5E8tUYpd6Gv+nONLQPyrZmr1rIUt/nX+yNcAMuIMFXodKfEZ1hfqUzeeQwvkMP4JzPJyt9DQ7RX0ZgG0LNi8eZDQMqI9gow6DpLIm2sjgMLbPULdsltrCfiw+usQGzPrhh6fBMTS1rdnpEffeN83brLDO9rPf8fNa02MePjzzzyqETj6cR6U14XsHeEiT6W1h1+j+5Rb3gbWZ2JD5lsQjpa7B1RFqXjU5cpGuBmxQ2nSREz7gx7HOf3Opl9Uj/w==|920
+}//hLxxIOm+b1U1g6HKfXvHkGA+wl0W+EGZR9pqb3iIKqod6jDMUQBHv9uNS5/lc8t5yOoCkMJ3iPsG6lZOJYiDh3pHyDyVyZQUcXjK7YVhq95UUzMMhV3iL++Hfio8K3ZfKjnt8AWf1wcc4m+mX47hejjVqU0PNed8HvySQqlcHgpT9xnFQZCPfUCRurzdKQnYwLawqglxExPWqXG9U5ykQz5d0NhzIq6/gbmjB7afnvigfd2xEeFhBxdgEaqfKbARJrZTUKYL7nIh871Ww7scva5jL07apk53LhHPoOfXAFljTpMCwwmEvzUXbpndeNCW3a2/5p/EC4ptKEt0ZbTELvw8a+d7eH9FsdiTCTSH7ukaJ14E2jeh+prRyUcQNEoCFI57E8J0Qo/4pZV0AWOq0OvvviTDmTPcltNlxKyUa6RoK7Mt8yecGX3cQ8h/oiNlilPFQ8DiWwOCm4UpzdswlIlhpfhNQ6xqjLjbpzFzDNxaHnqWwXEPv057yuLc7O7uK7GBUtNqoAd/7kcwKzRIeUgiH9SsSFsA/ID940NybTTID5C2hYuaLOm8WnZTQMqMz1c6UyyIVenD//volhXHIZXnjOiMF/rL7vQzjvOTvl0QSMDHkkI7WIE6c286eOBXys2wbTxc4N3cMZLLQWW/PsxEBd7hlORFu/h66XIBTMv7akSie4kTWx4R+3Md1E0fSuccstqn/1t4fXwSKs/qX8drkctzbEwupwSZRksyk8cNFAHvSnpmGbWfBGaadXrRAt/1w7DUKuw6i1i2SMQ4LP0do9J9qQdIh3h8xPep6cEdxYdUgeyDD0+GxDDLh/e9sz/nlMFQn2rhAJIHVASuCoaE3yupmAIl6kazeYsmvQmWlmGTEe0qxpeOCPMOVXpCVyvXdmqmMrEnNdrycbhb2g==|920
