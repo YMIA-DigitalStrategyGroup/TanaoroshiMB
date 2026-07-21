@@ -241,7 +241,16 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_fumei",
-    "ModuleType": 7
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-07-21T14:46:10.7456422+09:00",
+    "ModuleType": 7,
+    "ToRemoveFiles": [
+      "Tables\\ymia_t_tanaoroshi_fumei.json"
+    ]
   },
   {
     "ModuleName": "Image/img_share_01.png",
