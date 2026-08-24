@@ -255,5 +255,15 @@
   {
     "ModuleName": "Image/img_share_01.png",
     "ModuleType": 38
+  },
+  {
+    "ModuleName": "MobilePage/不明品一覧",
+    "State": 3,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-08-24T11:34:05.1786561+09:00",
+    "ModuleType": 2
   }
 ]
