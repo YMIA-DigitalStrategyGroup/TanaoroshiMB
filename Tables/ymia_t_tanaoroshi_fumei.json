@@ -75,6 +75,27 @@
       "MaxLength": -1,
       "Name": "数量",
       "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 40,
+      "Name": "棚番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 40,
+      "Name": "品番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 10,
+      "Name": "棚卸月",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     }
   ],
   "ExternalDatabaseInfo": {
@@ -85,6 +106,15 @@
   },
   "PrimaryKey": [
     "ID"
+  ],
+  "Relations": [
+    {
+      "PrimaryTable": "ユーザー情報ビュー",
+      "PrimaryColumn": "ユーザー名",
+      "ForeignTable": "ymia_t_tanaoroshi_fumei",
+      "ForeignColumn": "登録者",
+      "IsDetailTableRelation": false
+    }
   ],
   "Indexes": []
 }

@@ -62,7 +62,6 @@
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "Required": true,
-      "Unique": true,
       "DatabaseColumnType": "bigint",
       "MaxLength": -1,
       "Name": "TANAM_NBR",
@@ -76,7 +75,10 @@
     "SourceTableSchema": ""
   },
   "PrimaryKey": [
-    "TANAM_NBR"
+    "TARGET_YEAR_MONTH",
+    "Z_FLAG",
+    "AZUKARIKUBUN",
+    "HINBAN"
   ],
   "Indexes": []
 }

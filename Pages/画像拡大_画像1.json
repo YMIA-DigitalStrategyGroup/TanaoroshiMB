@@ -1,0 +1,95 @@
+{
+  "Rows": {
+    "Count": 24
+  },
+  "Cols": {
+    "Count": 16
+  },
+  "Values": {
+    "0,0": "ID",
+    "17,1": "閉じる"
+  },
+  "AttachInfos": {
+    "0,4": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "ID",
+        "GUID": "355bd4d5-5f56-4891-9c85-7bd4e2034d37"
+      }
+    },
+    "2,1": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "画像1",
+        "IsByteArray": true,
+        "GUID": "090c07a0-dd10-44cb-b206-75cd7c09685b"
+      },
+      "CellType": {
+        "$type": "Forguncy.UploadImageCellType, ServerDesignerCommon",
+        "ReadOnly": true,
+        "UploadImageLimit": {
+          "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
+        }
+      }
+    },
+    "17,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "0,4": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,1,4",
+    "0,4,1,4",
+    "2,1,14,14",
+    "17,1,3,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//z7/8uZFGBWjB10hXkAgyDDfJzU3G4FWh+CnfrNWnSrrfETem7eWB7erK1X1Yi0rEQO+o6toj/7RnClfYaOWOFN7PfO9Bs1ouHXzpf47VZlnbMH+51c0VoLw+uh5Amsi6JJFnlqjPz0phncrHM8DQComglSNYPI2SxKuB1jxFXGAGA/YsOCu23EeDp2fRRt66QlGmBd3xyyija6AbHWwCDN5SuieszR4A8pKwoHzf+OfN3WYtIfH246lcVkDP73/wL3IdlMKxbxfGvyxJUFrzGGxieRo5/tPaja98XMrbfhd9SZRv/VDaXJSML30gPCME24a48zfLZgov8B5OYdoxGN4ZA4ulF+8NrocNKjwBoLPzIj869FEl/eIQ99o4T8WPJnmqkypxxdqA8a23GDXAUNusaLOQYopHuoK26KFb6tkP3yHLGnUh90KympejJVt+f6Fk6kWDmWoO/eu0NqImItzsBHalTqlpv4krEdSEvtEqLpI+s9yyuDRUou9+SuYBlBYqGVwMGI1s8ouOHz1QYtXZfaQta2hgYZ18aCsZBMIlI/8MSGEIx4E8ukhiKLfVHejLOH5cH1m1pDQe1oDipmK0FQJhy/a4CmPLhkgLojWxQ/ILJxuyO4Fh88PMTjTXpS9Q0EG+L8D1jpsOnyJUzzq3Tg5T8kHBLCrNUxcEkVFv3V3s5Y0GiFR3qr4ipGhOXtKeri+pa9GPcDACErgYNZb/0uoYTf/D8+cgL0tKRSvPcayDsgUCBPSQHU/1cD3bbCoNdo6hmf9M+S28zJYeC7LZ+UMdwgFjOnifFQxXNo//cIi26vh2bG2PRwJGllRAg7w3V35Y4Wt/v1eRT//kh5cPxuHsFx+coql61oWLUmAjbkSe1ylaqL3FlJ+NPQ2MPE0C9EJ2HX4wFd0dk8NO6g==|920

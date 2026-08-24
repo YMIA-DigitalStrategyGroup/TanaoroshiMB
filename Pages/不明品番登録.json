@@ -4,19 +4,28 @@
       0,
       1
     ],
-    "Count": 30
+    "Count": 29
   },
   "Cols": {
     "Count": 18
   },
   "Values": {
     "0,1": "登録日",
+    "0,9": "ID",
     "1,1": "User",
-    "3,1": "棚番",
-    "5,1": "数量",
-    "8,1": "内容・コメント等",
-    "27,1": "登録",
-    "27,10": "閉じる"
+    "1,9": "棚卸月",
+    "2,1": "棚番",
+    "4,1": "タイトル",
+    "6,1": "数量",
+    "6,8": "状態",
+    "6,11": 0,
+    "8,1": "回答\r\n品番",
+    "11,1": "内容・コメント等",
+    "16,15": "拡大",
+    "21,15": "拡大",
+    "26,1": "不明品登録",
+    "26,8": "棚卸登録",
+    "26,14": "閉じる"
   },
   "Formulas": {
     "0,4": "TODAY()"
@@ -27,6 +36,13 @@
         "TableName": "ymia_t_tanaoroshi_fumei",
         "ColumnName": "作成日",
         "GUID": "3d7c2407-d2d6-433b-8034-44781b34f88b"
+      }
+    },
+    "0,12": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "ID",
+        "GUID": "a972600e-b753-4257-b5a6-c473bb142039"
       }
     },
     "1,4": {
@@ -44,11 +60,18 @@
         }
       }
     },
-    "3,4": {
+    "1,12": {
       "BindingInfo": {
         "TableName": "ymia_t_tanaoroshi_fumei",
-        "ColumnName": "不明品タイトル",
-        "GUID": "632d989d-6d51-4ea2-bd1e-133ab8c281d1"
+        "ColumnName": "棚卸月",
+        "GUID": "4ffad065-1f66-499a-b17e-d28323be5df7"
+      }
+    },
+    "2,4": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "棚番",
+        "GUID": "49491a66-7c60-436f-99b1-c74f7c7b3f4c"
       },
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
@@ -60,7 +83,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
-    "3,15": {
+    "2,15": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -68,7 +91,7 @@
             "$type": "SmartPhoneCommand.SmartPhoneCommand, SmartPhoneCommand",
             "TargetCell": {
               "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-              "SerializeProperty": "=不明品番登録!E4"
+              "SerializeProperty": "=不明品番登録!E3"
             }
           }
         ],
@@ -82,7 +105,23 @@
         "IconSize": 20.0
       }
     },
-    "5,4": {
+    "4,4": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "不明品タイトル",
+        "GUID": "145a23ef-1a78-4d6e-bc11-6cdfa6cd582c"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,4": {
       "BindingInfo": {
         "TableName": "ymia_t_tanaoroshi_fumei",
         "ColumnName": "数量",
@@ -93,7 +132,54 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
-    "9,1": {
+    "6,11": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "回答",
+        "GUID": "cfc2d21c-6c47-4b73-ab25-ab8cbf4a61bb"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "未回答"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "棚卸必要"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "棚卸不要"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "入力済"
+          }
+        ],
+        "CellDefaultValue": 0
+      }
+    },
+    "8,4": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "品番",
+        "GUID": "4d70b354-a41d-46b4-8454-c8fa93ec63d9"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ReadOnly": true
+      }
+    },
+    "12,1": {
       "BindingInfo": {
         "TableName": "ymia_t_tanaoroshi_fumei",
         "ColumnName": "備考",
@@ -104,7 +190,7 @@
         "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
       }
     },
-    "15,1": {
+    "16,1": {
       "BindingInfo": {
         "TableName": "ymia_t_tanaoroshi_fumei",
         "ColumnName": "画像1",
@@ -116,6 +202,31 @@
         "UploadImageLimit": {
           "AllowExtensions": ".png, .jpeg, .jpg, .bmp, .gif, .ico"
         }
+      }
+    },
+    "16,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "画像拡大_画像1",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=不明品番登録!M1"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=画像拡大_画像1!E1"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "拡大",
+        "TemplateKey": "_RS_Normal_Style2"
       }
     },
     "21,1": {
@@ -132,7 +243,32 @@
         }
       }
     },
-    "27,1": {
+    "21,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PageName": "画像拡大_画像2",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=不明品番登録!M1"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=画像拡大_画像2!E1"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "拡大",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "26,1": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
@@ -142,7 +278,7 @@
               {
                 "ConfirmDialogSettings": {
                   "Title": "確認",
-                  "FormulaText": "登録しますか？",
+                  "FormulaText": "不明品情報を登録しますか？",
                   "YesButtonText": "はい",
                   "NoButtonText": "いいえ",
                   "ConfirmIcon": 1
@@ -159,26 +295,167 @@
                     "MessageFormula": "登録しました！！"
                   },
                   {
-                    "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
-                    "Disabled": true
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back"
                   }
                 ],
-                "ID": "c65ca059-9866-43b1-89e7-641a8baa268a"
+                "ID": "2b5caef7-8b2a-4f89-aeab-ae41a8e66936"
               }
             ]
           }
         ],
-        "Text": "登録",
+        "Text": "不明品登録",
         "TemplateKey": "_RS_Normal_Style2"
       }
     },
-    "27,10": {
+    "26,8": {
       "CellType": {
         "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
         "CommandList": [
           {
-            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
-            "Disabled": true
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "ConfirmDialogSettings": {
+                  "Title": "確認",
+                  "FormulaText": "棚卸情報を登録しますか？",
+                  "YesButtonText": "はい",
+                  "NoButtonText": "いいえ",
+                  "ConfirmIcon": 1
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "ymia_t_tanaoroshi_datainput",
+                    "UpdateType": "add",
+                    "ShowConfirm": false,
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_datainput",
+                          "ColumnName": "TARGET_YEAR_MONTH",
+                          "GUID": "ce7cfa65-761a-436e-a42e-0794ae253741"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=不明品番登録!M2"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_datainput",
+                          "ColumnName": "HINBAN",
+                          "GUID": "a9637216-3e52-4960-8df4-d252bfc3d92b"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=不明品番登録!E9"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_datainput",
+                          "ColumnName": "TANABAN",
+                          "GUID": "e3f6f1ad-2902-4def-871b-5959fa2bf0e0"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=不明品番登録!E3"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_datainput",
+                          "ColumnName": "Z_FLAG",
+                          "GUID": "9a6d3699-1f9a-4bec-9b4a-ea0dc8ecc2bb"
+                        },
+                        "Value": "0"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_datainput",
+                          "ColumnName": "TANA_SU",
+                          "GUID": "87cd0878-b47a-43c2-9a49-4a746c91ffc2"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=不明品番登録!E7"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_datainput",
+                          "ColumnName": "TOROKUSHA_NAME",
+                          "GUID": "4180fffa-9d31-4812-a18e-c7f66dcbcf67"
+                        },
+                        "Value": "%CurrentUser%"
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_datainput",
+                          "ColumnName": "TOROKU_DATETIME",
+                          "GUID": "4f5abaa8-4f73-4ab9-8438-842b09f3b63f"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=NOW()"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                    "TableName": "ymia_t_tanaoroshi_fumei",
+                    "ShowConfirm": false,
+                    "RowsToUpdate": 1,
+                    "RowsToUpdateCondition": {
+                      "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                      "ColumnBindingInfo": {
+                        "TableName": "ymia_t_tanaoroshi_fumei",
+                        "ColumnName": "ID",
+                        "GUID": "9ab6fe27-87b2-400f-a2f8-11cfdac86cd9"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=不明品番登録!M1"
+                      }
+                    },
+                    "UpdateBindingValues": [
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_tanaoroshi_fumei",
+                          "ColumnName": "回答",
+                          "GUID": "adadcc4a-f0a5-430f-a468-922fc1444dc5"
+                        },
+                        "Value": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                    "MessageFormula": "登録しました！！"
+                  },
+                  {
+                    "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                    "NavigateType": "back"
+                  }
+                ],
+                "ID": "8c143823-e00f-48db-b77b-f7a1cb366292"
+              }
+            ]
+          }
+        ],
+        "Text": "棚卸登録",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "26,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
           }
         ],
         "Text": "閉じる",
@@ -239,21 +516,6 @@
       {
         "FontFamily": 1,
         "Formatter": 4,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "Background": 3,
-        "FontFamily": 1,
-        "BorderBottom": 0,
-        "BorderTop": 0,
-        "BorderLeft": 0,
-        "BorderRight": 0
-      },
-      {
-        "FontFamily": 1,
         "BorderTop": 0,
         "BorderLeft": 0
       },
@@ -276,9 +538,45 @@
         "BorderRight": 0
       },
       {
-        "Formatter": 4,
+        "Background": 3,
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
         "HorizontalAlignment": 5,
-        "VerticalAlignment": 6,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderTop": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "Background": 6,
+        "FontFamily": 1,
+        "Formatter": 2,
+        "WordWrap": true,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 4,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 8,
         "WordWrap": true,
         "BorderTop": 0,
         "BorderLeft": 0
@@ -290,7 +588,47 @@
         "BorderRight": 0
       },
       {
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
         "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664
+      },
+      {
+        "Background": 9,
+        "FontFamily": 1,
+        "FontSize": 18.666666666666664
       },
       {
         "FontFamily": 1,
@@ -304,8 +642,11 @@
         "[AUTO]General",
         "Accent 1 80",
         "@",
+        "Right",
+        "Accent 3 80",
         "Left",
-        "Top"
+        "Top",
+        "Accent 6 40"
       ],
       "Borders": [
         {
@@ -322,6 +663,14 @@
       "0,6": 2,
       "0,7": 2,
       "0,8": 3,
+      "0,9": 4,
+      "0,10": 5,
+      "0,11": 5,
+      "0,12": 6,
+      "0,13": 2,
+      "0,14": 2,
+      "0,15": 2,
+      "0,16": 3,
       "1,1": 4,
       "1,2": 5,
       "1,3": 5,
@@ -330,132 +679,258 @@
       "1,6": 2,
       "1,7": 2,
       "1,8": 3,
-      "3,1": 7,
+      "1,9": 4,
+      "1,10": 5,
+      "1,11": 5,
+      "1,12": 6,
+      "1,13": 2,
+      "1,14": 2,
+      "1,15": 2,
+      "1,16": 3,
+      "2,1": 7,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 8,
+      "2,5": 9,
+      "2,6": 9,
+      "2,7": 9,
+      "2,8": 9,
+      "2,9": 9,
+      "2,10": 9,
+      "2,11": 9,
+      "2,12": 9,
+      "2,13": 9,
+      "2,14": 10,
+      "2,15": 0,
+      "2,16": 0,
+      "3,1": 0,
       "3,2": 0,
       "3,3": 0,
-      "3,4": 8,
-      "3,5": 0,
-      "3,6": 0,
-      "3,7": 0,
-      "3,8": 0,
-      "3,9": 0,
-      "3,10": 0,
-      "3,11": 0,
-      "3,12": 0,
-      "3,13": 0,
-      "3,14": 0,
+      "3,4": 11,
+      "3,5": 12,
+      "3,6": 12,
+      "3,7": 12,
+      "3,8": 12,
+      "3,9": 12,
+      "3,10": 12,
+      "3,11": 12,
+      "3,12": 12,
+      "3,13": 12,
+      "3,14": 13,
       "3,15": 0,
       "3,16": 0,
-      "4,1": 0,
-      "4,2": 0,
-      "4,3": 0,
-      "4,4": 0,
-      "4,5": 0,
-      "4,6": 0,
-      "4,7": 0,
-      "4,8": 0,
-      "4,9": 0,
-      "4,10": 0,
-      "4,11": 0,
-      "4,12": 0,
-      "4,13": 0,
-      "4,14": 0,
-      "4,15": 0,
-      "4,16": 0,
-      "5,1": 9,
+      "4,1": 14,
+      "4,2": 5,
+      "4,3": 5,
+      "4,4": 8,
+      "4,5": 9,
+      "4,6": 9,
+      "4,7": 9,
+      "4,8": 9,
+      "4,9": 9,
+      "4,10": 9,
+      "4,11": 9,
+      "4,12": 9,
+      "4,13": 9,
+      "4,14": 10,
+      "5,1": 5,
       "5,2": 5,
       "5,3": 5,
-      "5,4": 10,
-      "5,5": 11,
-      "5,6": 11,
-      "5,7": 11,
-      "5,8": 11,
-      "5,9": 11,
-      "5,10": 11,
-      "5,11": 11,
-      "5,12": 11,
-      "5,13": 11,
-      "5,14": 12,
-      "6,1": 5,
+      "5,4": 11,
+      "5,5": 12,
+      "5,6": 12,
+      "5,7": 12,
+      "5,8": 12,
+      "5,9": 12,
+      "5,10": 12,
+      "5,11": 12,
+      "5,12": 12,
+      "5,13": 12,
+      "5,14": 13,
+      "6,1": 14,
       "6,2": 5,
       "6,3": 5,
-      "6,4": 13,
-      "6,5": 14,
-      "6,6": 14,
-      "6,7": 14,
-      "6,8": 14,
-      "6,9": 14,
-      "6,10": 14,
-      "6,11": 14,
-      "6,12": 14,
-      "6,13": 14,
-      "6,14": 15,
-      "9,1": 16,
-      "9,2": 11,
-      "9,3": 11,
+      "6,4": 15,
+      "6,5": 9,
+      "6,6": 9,
+      "6,7": 9,
+      "6,8": 16,
+      "6,9": 5,
+      "6,10": 5,
+      "6,11": 17,
+      "6,12": 9,
+      "6,13": 9,
+      "6,14": 10,
+      "7,1": 5,
+      "7,2": 5,
+      "7,3": 5,
+      "7,4": 11,
+      "7,5": 12,
+      "7,6": 12,
+      "7,7": 12,
+      "7,8": 5,
+      "7,9": 5,
+      "7,10": 5,
+      "7,11": 12,
+      "7,12": 12,
+      "7,13": 12,
+      "7,14": 13,
+      "8,1": 18,
+      "8,2": 5,
+      "8,3": 5,
+      "8,4": 8,
+      "8,5": 9,
+      "8,6": 9,
+      "8,7": 9,
+      "8,8": 9,
+      "8,9": 9,
+      "8,10": 9,
+      "8,11": 9,
+      "8,12": 9,
+      "8,13": 9,
+      "8,14": 10,
+      "9,1": 5,
+      "9,2": 5,
+      "9,3": 5,
       "9,4": 11,
-      "9,5": 11,
-      "9,6": 11,
-      "9,7": 11,
-      "9,8": 11,
-      "9,9": 11,
-      "9,10": 11,
-      "9,11": 11,
-      "9,12": 11,
-      "9,13": 11,
-      "9,14": 11,
-      "9,15": 11,
-      "9,16": 12,
-      "10,1": 17,
-      "10,16": 18,
-      "11,1": 17,
-      "11,16": 18,
-      "12,1": 17,
-      "12,16": 18,
-      "13,1": 13,
-      "13,2": 14,
-      "13,3": 14,
-      "13,4": 14,
-      "13,5": 14,
-      "13,6": 14,
-      "13,7": 14,
-      "13,8": 14,
-      "13,9": 14,
-      "13,10": 14,
-      "13,11": 14,
-      "13,12": 14,
-      "13,13": 14,
-      "13,14": 14,
-      "13,15": 14,
-      "13,16": 15,
-      "21,1": 19,
-      "26,1": 19,
-      "26,2": 19,
-      "26,3": 19,
-      "26,4": 19,
-      "26,5": 19,
-      "26,6": 19,
-      "26,7": 19,
-      "26,8": 19,
-      "26,9": 19,
-      "26,10": 19,
-      "26,11": 19,
-      "26,12": 19,
-      "27,1": 20,
-      "27,10": 20,
-      "27,11": 19,
-      "27,12": 19,
-      "27,13": 19,
-      "27,14": 19,
-      "27,15": 19,
-      "27,16": 19,
-      "28,10": 19,
-      "28,11": 19,
-      "28,12": 19,
-      "28,13": 19,
-      "28,14": 19,
-      "28,15": 19,
-      "28,16": 19
+      "9,5": 12,
+      "9,6": 12,
+      "9,7": 12,
+      "9,8": 12,
+      "9,9": 12,
+      "9,10": 12,
+      "9,11": 12,
+      "9,12": 12,
+      "9,13": 12,
+      "9,14": 13,
+      "12,1": 19,
+      "12,2": 9,
+      "12,3": 9,
+      "12,4": 9,
+      "12,5": 9,
+      "12,6": 9,
+      "12,7": 9,
+      "12,8": 9,
+      "12,9": 9,
+      "12,10": 9,
+      "12,11": 9,
+      "12,12": 9,
+      "12,13": 9,
+      "12,14": 9,
+      "12,15": 9,
+      "12,16": 10,
+      "13,1": 20,
+      "13,16": 21,
+      "14,1": 11,
+      "14,2": 12,
+      "14,3": 12,
+      "14,4": 12,
+      "14,5": 12,
+      "14,6": 12,
+      "14,7": 12,
+      "14,8": 12,
+      "14,9": 12,
+      "14,10": 12,
+      "14,11": 12,
+      "14,12": 12,
+      "14,13": 12,
+      "14,14": 12,
+      "14,15": 12,
+      "14,16": 13,
+      "16,1": 22,
+      "16,2": 9,
+      "16,3": 9,
+      "16,4": 9,
+      "16,5": 9,
+      "16,6": 9,
+      "16,7": 9,
+      "16,8": 9,
+      "16,9": 9,
+      "16,10": 9,
+      "16,11": 9,
+      "16,12": 9,
+      "16,13": 9,
+      "16,14": 10,
+      "16,15": 23,
+      "16,16": 21,
+      "17,1": 20,
+      "17,14": 21,
+      "17,16": 21,
+      "18,1": 20,
+      "18,14": 21,
+      "18,16": 21,
+      "19,1": 11,
+      "19,2": 12,
+      "19,3": 12,
+      "19,4": 12,
+      "19,5": 12,
+      "19,6": 12,
+      "19,7": 12,
+      "19,8": 12,
+      "19,9": 12,
+      "19,10": 12,
+      "19,11": 12,
+      "19,12": 12,
+      "19,13": 12,
+      "19,14": 13,
+      "19,16": 21,
+      "21,1": 24,
+      "21,2": 9,
+      "21,3": 9,
+      "21,4": 9,
+      "21,5": 9,
+      "21,6": 9,
+      "21,7": 9,
+      "21,8": 9,
+      "21,9": 9,
+      "21,10": 9,
+      "21,11": 9,
+      "21,12": 9,
+      "21,13": 9,
+      "21,14": 10,
+      "21,15": 25,
+      "21,16": 26,
+      "22,1": 20,
+      "22,14": 21,
+      "22,15": 23,
+      "22,16": 27,
+      "23,1": 20,
+      "23,14": 21,
+      "23,15": 23,
+      "23,16": 27,
+      "24,1": 11,
+      "24,2": 12,
+      "24,3": 12,
+      "24,4": 12,
+      "24,5": 12,
+      "24,6": 12,
+      "24,7": 12,
+      "24,8": 12,
+      "24,9": 12,
+      "24,10": 12,
+      "24,11": 12,
+      "24,12": 12,
+      "24,13": 12,
+      "24,14": 13,
+      "24,15": 28,
+      "24,16": 29,
+      "25,1": 23,
+      "25,2": 23,
+      "25,3": 23,
+      "25,4": 23,
+      "25,5": 23,
+      "25,6": 23,
+      "25,7": 23,
+      "25,8": 23,
+      "25,9": 23,
+      "25,10": 23,
+      "25,11": 23,
+      "25,12": 23,
+      "26,1": 30,
+      "26,8": 31,
+      "26,13": 23,
+      "26,14": 32,
+      "27,13": 23
     },
     "SheetStyle": {
       "FontFamily": 1
@@ -466,16 +941,29 @@
     "1,1,1,3",
     "0,4,1,5",
     "1,4,1,5",
-    "9,1,5,16",
-    "27,1,2,7",
-    "27,10,2,7",
-    "15,1,5,16",
-    "21,1,5,16",
-    "3,1,2,3",
-    "3,4,2,11",
-    "3,15,2,2",
-    "5,1,2,3",
-    "5,4,2,11"
+    "12,1,3,16",
+    "2,1,2,3",
+    "2,15,2,2",
+    "6,1,2,3",
+    "8,1,2,3",
+    "0,9,1,3",
+    "0,12,1,5",
+    "6,4,2,4",
+    "6,8,2,3",
+    "6,11,2,4",
+    "4,1,2,3",
+    "8,4,2,11",
+    "2,4,2,11",
+    "4,4,2,11",
+    "16,1,4,14",
+    "16,15,4,2",
+    "21,1,4,14",
+    "21,15,4,2",
+    "26,1,2,6",
+    "26,8,2,5",
+    "26,14,2,3",
+    "1,9,1,3",
+    "1,12,1,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -496,10 +984,11 @@
     },
     "RowBreakLines": [],
     "RepeatRangeSettings": [],
-    "IsMobilePage": true
+    "IsMobilePage": true,
+    "RelatedDataTableName": "ymia_t_tanaoroshi_fumei"
   },
   "PrintInfo": {
     "PaperSize": {},
     "Margin": {}
   }
-}//sU48CEvPVKfwtVT0fd28GFhzbOZZzMdoicqavs/uYDbEQyH4/zNOH8hWLOTMuC7VQGkH2OamED7eu1oxG16YpWzOohj1V/9abKjpLJsWyCAAaWvOdmlNPKZ40G4kP5jAW1FQzZAfX1866xLIQCnBUa6Gxu4KcJTAC3qnF96321C6qDpBF6pfWnbaOaaXiFS7RXAWZ12wuWKZfPtxE+1oQrqX+SpAccT3t7gH/eXlWxT0pdKAQjJ+acHVTKIDRLR+uaMjah+tDeyD4dojIJb82yaBaJ+cu+zlwR9lXuVwhGoa1Ez7KUIdF5L/0pCE8ed58kx3fuNKVTppGpNym4mIhVVxoubd93CMChpWe8TkA+DzHQJLMOXrX0VriIutx0t2HiQ/MX5aVgQVR+F9o8jsp8m3b6LLhu1TcQFjNO49ROxlfTNrH7syqOOkubIL8Qg4YSQUQxuvDa9igmsNn8NCS02DhJW867wyQXs1Dsx3BVZGCWlUFCuz9HYxkUIyA3r++tqVlNrMGy6JuSGT2qa1XwTLPmOtrUHK7njV7Yv/yqeoRAmFR7sP7SKgYbzdJxOGvzhYPTZn7TuoQHHoxJT7kCS2pwhnT3PMGpPluti49PWgz+qytPy9L8ceS1WarPPCAFPPw2Gz2kG2XnnSZJIaquniEMnx7WB79+whcJ7UOSeKu1tU6GGH7/EExSUQkeq9BnHSAVvGFrO2RV01PjmAQT21v/qgM2RuueD9kKPDR6LFeJQkzwPzXNp47fZX9Z1f8PGvPe12jfIfrOaPC0ihWC0ivzYlQluThGwDBwIWUqZDkN0W8oYcYWtX8PzeIxZXyUDOr0aTHWTdVzR1PPYB3TsVmSlCw8vMFn/jgJUb8WDlXlaA/9kId1OAejYp5FWztjk6dXloA+H0c3JqH+UBrQ==|920
+}//Rz/B+T9A5yRfIIFC1AES3yaoiLKcRc89IeC9BfED8t2OVnvOxS7rUB2A1jryTfWqGo7BP+ADeo8QrHt38J5P/NwcmFVYcnSm+8EY8vMX4bt+4OEMXjg8mZDWE7/nUxwu9FU6rLzrRnXLDyqSRtIot+jDTY6IH4rCc6hjtSSYzl3U3x1TtCt2l1Es0Ztpx+uDXBMkulIyJCw/DUVk2IuALkOhSDx2OC1fRfGy4J7GFr5CT9GBl7U5Fr9z9wfqOqpZ0bI2gOnUxgaxtlB9utNMVXWRTHFymtL3GggOzLp6SSoyXQuy37Dzk0rDRA4qxSasaYynrKaCXYfTSAbASpK/r1iRr7emilFcEDMze+EIzkOe8hECWMvqkd8RzNxpG2sXj83DPOASxSd8iS9CNqniYcBdNiZ1uDCyVx8Vwq7kzWHZD7e4v2M6ijuEzqWnbEv77EbiL6RbdtguY0DXM3xAPPWOtPKDN6AMyvE6GrZBbqmH0KXFJYWRB15wu2TYjm0w6gKDpSCXpxm7z4q78r/WfebxnXzmrvlVo1IkVmLGHQgv/cA+bXLoc3EF7ptQzAmt7kyjgxbGY6ifMvHqpcM7nacSgZEnVUK1J5cro/ihhecJa0mWr//DFQYjZBdrroiI1wCo3t8iq3MtXrGMbIlipGX0UybB27Ul759uQlAT5XD39ln1dyzOAAl6RxPqFt4Da9tD0MF/sZn4Nu46vFt/Iei/wPVx1fqPu7Xaz87rEySCFnC2Mtk2SawgGiNRC8RGTJ9jZOGm9sBNt/1bUl3QrwfpIsPXr80LLM+ssoYObJEpxhhvvheYVuHEiH/Fp5n8/lJn3IrCa6E09t2Qoa091EA7T8nn/u8KW6Q1wlwLzsVdC5K5IDiQcS2vbKTkol0aO20Vo1iAY9pRdsXkf2vftg==|920

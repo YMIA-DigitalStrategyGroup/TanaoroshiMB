@@ -5,29 +5,11 @@
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_datainput",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T13:43:11.2539112+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_datainput.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_data",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T13:43:11.2539028+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_data.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/tkansayo_tanaoroshi",
@@ -51,17 +33,7 @@
   },
   {
     "ModuleName": "MobilePage/棚卸入力_実棚入力",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T11:24:41.7515612+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\棚卸入力_実棚入力.json",
-      "Pages\\棚卸入力_実棚入力.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Pages/ビルトイン ページ",
@@ -173,17 +145,7 @@
   },
   {
     "ModuleName": "MasterMobilePage/棚卸メニュー",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T13:45:41.3506893+09:00",
-    "ModuleType": 4,
-    "ToRemoveFiles": [
-      "MasterPages\\棚卸メニュー.json",
-      "MasterPages\\棚卸メニュー.rd"
-    ]
+    "ModuleType": 4
   },
   {
     "ModuleName": "ApplicationSetting",
@@ -239,23 +201,7 @@
   },
   {
     "ModuleName": "Upload",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T13:43:11.256122+09:00",
-    "ModuleType": 26,
-    "ToRemoveFiles": [
-      "Upload\\8f175957-1bd8-4431-888b-86f27d10c715_スクリーンショット 2026-05-10 071055.png",
-      "Upload\\8f175957-1bd8-4431-888b-86f27d10c715_スクリーンショット 2026-05-10 071055.small.png",
-      "Upload\\c0575b0b-900a-40e3-80e1-8bbf31317849_GoogleCloudAgentAPI一覧.medium.png",
-      "Upload\\c0575b0b-900a-40e3-80e1-8bbf31317849_GoogleCloudAgentAPI一覧.png",
-      "Upload\\c0575b0b-900a-40e3-80e1-8bbf31317849_GoogleCloudAgentAPI一覧.small.png",
-      "Upload\\fc9e1396-a6d9-44d2-8db8-e0a6566e9f81_forguncy-icon.medium.png",
-      "Upload\\fc9e1396-a6d9-44d2-8db8-e0a6566e9f81_forguncy-icon.png",
-      "Upload\\fc9e1396-a6d9-44d2-8db8-e0a6566e9f81_forguncy-icon.small.png"
-    ]
+    "ModuleType": 26
   },
   {
     "ModuleName": "PublishConfiguration",
@@ -271,30 +217,11 @@
   },
   {
     "ModuleName": "MobilePage/不明品番登録",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T14:34:07.9857015+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\不明品番登録.json",
-      "Pages\\不明品番登録.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "Table/ymia_t_tanaoroshi_fumei",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T11:31:51.6514675+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\ymia_t_tanaoroshi_fumei.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Image/img_share_01.png",
@@ -302,43 +229,19 @@
   },
   {
     "ModuleName": "MobilePage/不明品一覧",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T11:34:05.1786561+09:00",
     "ModuleType": 2
   },
   {
     "ModuleName": "TableView/ユーザー情報ビュー",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T13:43:11.2539159+09:00",
     "ModuleType": 23,
     "ExclusiveType": 0
   },
   {
     "ModuleName": "PCPage/画像拡大_画像1",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T14:34:07.9855221+09:00",
     "ModuleType": 1
   },
   {
     "ModuleName": "PCPage/画像拡大_画像2",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-08-24T14:34:21.6789899+09:00",
     "ModuleType": 1
   }
 ]

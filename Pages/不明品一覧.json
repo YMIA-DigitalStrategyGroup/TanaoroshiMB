@@ -1,0 +1,204 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "18": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 21,
+    "DefaultSize": 27.0
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      17
+    ],
+    "Count": 19
+  },
+  "Values": {
+    "18,1": "登録"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "RowIndex": 1,
+        "ColumnIndex": 1,
+        "RowCount": 16,
+        "ColumnCount": 17,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "2,1": {
+      "NameUsedInJavaScript": "不明品タイトル",
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "不明品タイトル",
+        "GUID": "298089be-ff8d-42d7-a68d-a04815e344d9"
+      }
+    },
+    "2,9": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "登録者",
+        "GUID": "c7b0b068-821b-49a3-b48a-ee4b73065d17",
+        "RelationBinding": {
+          "RelatedTable": "ユーザー情報ビュー",
+          "RelatedColumn": "ユーザー名",
+          "DisplayColumn": "氏名"
+        }
+      }
+    },
+    "2,13": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "回答",
+        "GUID": "5de5d938-65ab-4507-9260-8e60c2d1b49b"
+      },
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "Items": [
+          {
+            "Value": "0",
+            "DisplayValue": "未回答"
+          },
+          {
+            "Value": "1",
+            "DisplayValue": "棚卸必要"
+          },
+          {
+            "Value": "2",
+            "DisplayValue": "棚卸不要"
+          },
+          {
+            "Value": "3",
+            "DisplayValue": "入力済"
+          }
+        ],
+        "ReadOnly": true
+      }
+    },
+    "2,17": {
+      "BindingInfo": {
+        "TableName": "ymia_t_tanaoroshi_fumei",
+        "ColumnName": "ID",
+        "GUID": "d5cfcf06-a862-4f30-a2e9-dc65c3504d9f"
+      }
+    },
+    "18,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "不明品番登録",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=不明品一覧!R3"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=不明品番登録!M1"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "登録",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 16.0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,9": 0,
+      "1,13": 0,
+      "2,1": 0,
+      "2,9": 0,
+      "2,13": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "18,1,2,6",
+    "1,1,1,8",
+    "2,1,1,8",
+    "1,9,1,4",
+    "2,9,1,4",
+    "3,1,14,17",
+    "2,13,1,4",
+    "1,13,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "棚卸メニュー",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//dXC/Bjc8qFcqXL4s4cqpsWl9LtPhlfkpDEZfU1KVWSzJYC3XoGbztOofCRDl9u7xnpPScYbC3SGK1aupB8xg2QPh8Aowx7ySrHgh55nC8UnGfKgkJeyFf4tlgKRHqrTbuzA+uMKXp6wrtmv1VRX6iv/80y0Kcta1ZuUQL8LuiycZoajb81hNORSSfED0rPyBv9PPhK4wPOliFSKh+cQb0WJPrHpSQcOnSoEhP2qNPe6WXMOgsPBt5I1Gs6Da3SZO6YJPB2TkGYNkZ9pAAjiSqUXtgTW5LJVoYmGwIz5lTYV5WAWKlqY92doeHt2RcQ7yLPS4La1JPk8I+2OUMNJa0/SuSuIvpXESofo0pSCkuD3tZvRzDVmtxyHnWHHwDeyPVd3IjqqxrTzO8LWSY6CCSeKWpu1qUkdPv4hXxKuXz72uygfCI7f2z1OvkzmUYdkk5S5G6eMD8iHBrHLKF/Ij1dCZGWmDIzTyByo8cO8RAbPmKKTCXxwwd+22Af/Yt2Y8ZDPEDLlcDikpIRqySRH5wB3htWWNDPhytUnMUFN04erd0kDRDZYR3m754gUfTQv+HrWwrAZKYUV3/UlEcKQAsXdyt9EJ279raTRbPfFc9TFqL3DlyDdk+vBfvgu1QauPiBgDOes2WQHks9//WAiTKQ6Q9A30QMcnpcXuFv441h+C8p7KFn/SAgbpSp+00WSUY223rTtl2NIstIZp0sevno5Kt68P1neU15ugtO7f2vTYXbhlpaC75LJe2vbHLdfVhwA1UpD/8wU7bOVfTnRwj3h+Oyv3dyx3u1iwDeQCkIKNLHebfJOyQppp+jjSyM81+gWH2zekrcVWKkKqLSBQQFnFQliYrNB8pq4z8JlW8DM3dOfkIkue/aeI6Rz+lZQA8DR3MPu3s+C1pynaFgucrg==|920
