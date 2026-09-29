@@ -27,18 +27,18 @@
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": false,
+      "DefaultValue": 0,
       "Required": true,
-      "DatabaseColumnType": "tinyint",
+      "DatabaseColumnType": "int",
       "MaxLength": -1,
       "Name": "Z_FLAG",
       "ColumnType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     },
     {
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
-      "DefaultValue": false,
+      "DefaultValue": 0,
       "Required": true,
-      "DatabaseColumnType": "tinyint",
+      "DatabaseColumnType": "int",
       "MaxLength": -1,
       "Name": "AZUKARIKUBUN",
       "ColumnType": "System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
